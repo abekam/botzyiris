@@ -1,0 +1,3156 @@
+FPage 1
+Zebra ® Iris GTX
+Installation and Technical Reference
+Manual no. Y11537-101-0002
+March 21, 2022
+
+Tables:
+==== Page Separator ====
+
+Page 2
+Zebra ® and Zebra  Design Assistant® are registered trademarks of Zebra 
+Electronic Systems Ltd. in Canada, USA and other countries.
+Zebra  Imaging OS is a trademarks of Zebra Technologies.
+Intel® AtomTM is a trademark of the Intel Corporation.
+ICS3 inline controller © 2015 Advanced Illumination Inc.
+Brick Light© 2015 Smart Vision Lights.
+Varioptic© 2016 Parrot Drones SAS.
+Virtual Network Computing® is a registered trademark of RealVNC Limited.
+Modbus® is a registered trademark of MODICON, Inc.
+PROFINET® is a registered trademark of PROFIBUS and PROFINET International
+(PI).
+PuTTY™ is a trademark of Simon Tatham.
+EtherNet/IP™ is a trademark of ODVA, Inc.
+Filezilla® is a registered trademark of the FileZilla project.
+Patent Notice
+This produce might be protected by one or more patents. See
+.
+All other nationally and internationally recognized trademarks and tradenames
+are hereby acknowledged.
+© Copyright Zebra Technologies, 2021-2022. All rights reserved.
+1055 St-Regis Blvd. Dorval, Quebec, Canada H9P 2T4
+Web: http://www.Zebra.com
+Limitation of Liabilities: In no event will Zebra or its suppliers be liable for any
+indirect, special, incidental, economic, cover or consequential damages arising
+out of the use of or inability to use the product, user documentation or related
+technical support, including without limitation, damages or costs relating to the
+loss of profits, business, goodwill, even if advised of the possibility of such
+damages. In no event will Zebra and its suppliers’ liability exceed the amount
+paid by you, for the product.
+Because some jurisdictions do not allow the exclusion or limitation of liability for
+consequential or incidental damages, the above limitation, may not apply to
+you.
+Disclaimer: Zebra Technologies reserves the right to make changes in
+specifications at any time and without notice. The information provided by this
+document is believed to be accurate and reliable. However, neither Zebra Technologies nor its suppliers assume any responsibility for its use; or for
+any infringements of patents or other rights of third parties resulting from its use.
+No license is granted under any patents or patent right of Zeba Technologies.
+PRINTED IN CANADA
+
+Tables:
+==== Page Separator ====
+
+Page 3
+Contents
+Chapter 1: Before you begin. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .8
+Models available . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Inspecting your Zebra  Iris GTX package . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .10
+Zebra  Iris GTX with Design Assistant base package . . . . . . . . . . . . . . . . . . 10
+Zebra  Iris GTX starter kit. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+Available separately . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Third-party supported devices. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Software overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .13
+Documentation conventions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .14
+Zebra  Iris GTX safety warnings and key to symbols . . . . . . . . . . . . . . . . . . . . . . . .15
+Manual overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .16
+Need help? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .16
+Chapter 2: Powering and connecting to your
+Zebra  Iris GTX . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Powering and connecting to your
+Zebra  Iris GTX . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .18
+Optionally connecting a liquid lens . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .22
+Adding Zebra  Iris GTX to your network . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .24
+Device name (AUTO NETNAME) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Using a static IP address with networks that do not use DHCP. . . . . . . 24
+Connecting to your Zebra  Iris GTX desktop . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .26
+Accessing your Zebra  Iris GTX desktop remotely. . . . . . . . . . . . . . . . . . . . 26
+Accessing your Zebra  Iris GTX from your PC . . . . . . . . . . . . . . . . . . . . . . 27
+
+Tables:
+==== Page Separator ====
+
+Page 4
+Connecting to the auxiliary I/O interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+Connecting devices to the auxiliary output signals . . . . . . . . . . . . . . . . . . . . . 29
+Connecting an auxiliary output signal to a sourcing input. . . . . . . . . . . . 34
+Connecting an auxiliary output signal to a sinking input. . . . . . . . . . . . . 35
+Connecting an auxiliary output signal to an inductive load input . . . . . . 37
+Connecting devices to the auxiliary input signals . . . . . . . . . . . . . . . . . . . . . . 38
+Connecting a sourcing output device to an auxiliary input signal. . . . . . . 41
+Connecting a sinking output device to an auxiliary input signal . . . . . . . 42
+Connecting a 3-wire PNP proximity sensor to an auxiliary input signal. . 43
+Connecting a 3-wire NPN proximity sensor to an auxiliary input signal . 44
+Connecting a 2-wire proximity sensor to an auxiliary input signal. . . . . . 45
+Connecting a light controller and the analog intensity control signal . . . . . . . . . . . . . 47
+Connecting a sourcing light controller (NPN pin). . . . . . . . . . . . . . . . . . 48
+Connecting a sinking light controller (PNP Pin). . . . . . . . . . . . . . . . . . . 49
+Appendix A: Glossary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+Glossary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+Appendix B: Technical reference . . . . . . . . . . . . . . . . . . . . . . . . . 53
+Zebra  Iris GTX smart camera summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+Sensor board. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+CPU board. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+Lenses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+General care and cleaning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+
+Tables:
+==== Page Separator ====
+
+Page 5
+Zebra  Iris GTX specifications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .58
+Electrical specifications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+Environmental specifications. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Mechanical specifications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Dimensions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+LEDs on your Zebra  Iris GTX . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .62
+Zebra  Iris GTX connectors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .64
+Digital I/O and power connector . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+100/1000 BaseT Ethernet connector. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+VGA/USB connector . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+Liquid lens connector . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+Appendix C: Zebra  Imaging operating system
+utilities and recovery. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
+Zebra  Imaging operating system utilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .74
+Upgrading the Zebra  Imaging operating system . . . . . . . . . . . . . . . . . . . . . . . . . . .75
+Restoring the Zebra  Imaging operating system . . . . . . . . . . . . . . . . . . . . . . . . . . . .76
+Restoring the MIOS to factory defaults. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+Acquiring and restoring MIOS from a USB key . . . . . . . . . . . . . . . . . . . . . . 77
+Burning an ISO to a USB key . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+Updating the Zebra  Iris GTX BIOS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .78
+Appendix D: Listing of Zebra  Iris GTX smart cameras . . . . . . . 81
+Key feature changes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .82
+Index
+Regulatory Compliance
+Limited Warranty
+
+Tables:
+==== Page Separator ====
+
+Page 6
+
+
+Tables:
+==== Page Separator ====
+
+Page 7
+Chapter1
+Before you 1 begin
+Chapter 1:
+This chapter describes the features of your Zebra  Iris GTX,
+lists the various smart camera models available, describes
+the software required to develop your imaging applications,
+outlines documentation conventions, provides an overview
+of this manual, and specifies where to find further support.
+
+Tables:
+C,hap,ter,1,,
+
+==== Page Separator ====
+
+Page 8
+8 Chapter 1: Before you begin
+Introduction
+Zebra  Iris GTX combines the integration of a conventional smart camera with
+the flexibility of a traditional PC-based machine vision system. Zebra  Iris GTX
+is a fully programmable device, allowing extensive customization. Zebra 
+Iris GTX comes pre-installed with the Zebra  Design Assistant runtime
+environment.
+Zebra  Design Assistant is an intuitive, flowchart-based, integrated development
+environment (IDE). System integrators and professional end-users can easily and
+quickly develop and deploy machine vision applications on a highly integrated
+platform without the need for traditional programming skills. The integrated
+development environment provides access to a comprehensive set of
+highly-efficient and field-proven image analysis and measurement tools.
+Zebra  Iris GTX features an Intel-architecture processor, and uses a global shutter
+CMOS image sensor from a range of monochrome and color options. The CMOS
+image sensor allows the exposure phase of a triggered grab to occur while the
+previous image is being transferred. The Intel-architecture processor is an Intel
+Atom x6211E processor. The 32-Gbyte eMMC (flash disk) provides in-camera
+(on-board) storage for both the operating system and additional data. 4 Gbytes
+of LPDDR4x SDRAM provides in-camera (on-board) volatile storage.
+Zebra  Iris GTX is fully integrated in an IP67 enclosure, eliminating the need to
+separately source a sealed camera housing, while still providing easy access to the
+lens.
+
+Tables:
+==== Page Separator ====
+
+Page 9
+Introduction 9
+Zebra  Iris GTX can connect to a display device through the VGA/USB
+connector and it can communicate with other devices through the Gigabit
+Ethernet network interface (100/1000 BaseT) and digital auxiliary I/O signals.
+An advanced I/O engine is included to allow you to communicate and coordinate
+events using the auxiliary I/O signals (for example, to trigger and set the duration
+of the exposure).
+The network interface can be used for general purpose, Gigabit network
+communication, or for communication with external devices using the
+PROFINET, EtherNet/IP, CCLink, or Modbus industrial protocols. For
+PROFINET communication on the network interface, Zebra  Iris GTX provides
+a PROFINET engine with a hardware-assisted PROFINET interface. The
+hardware-assisted interface supports a minimum I/O cycle time of 1 msec.
+Models available
+There are ten models available in the Zebra  Iris GTX family of products.
+Zebra  Iris GTX GTX2000 GTX2000C GTX5000 GTX5000C GTX8000 GTX8000C
+feature
+Sensor chip type 1/2.2"-type 2/3"-type 1/1.1"-type
+Effective 1920x1200 2592x2048 4096x2160
+resolution
+Color / Monochrome Color Monochrome Color Monochrome Color
+Monochrome
+Frame ratea 70.7 fps 17.6 fps 41.7 fps 10.4 fps 39.6 fps 9.9 fps
+Zebra  Iris GTX feature GTX12000 GTX12000C GTX16000 GTX16000C
+Sensor chip type 1"-type 1.1"-type
+Effective resolution 4096x3072 4000x4000
+Color / Monochrome Monochrome Color Monochrome Color
+Frame ratea 28 fps 7.0 fps 21.6 fps 5.4 fps
+a. Frame rate is established solely upon rates of acquisition. Your results will differ when including processing time.
+Color versions of this smart camera utilize a sensor with a Bayer color filter but
+store the images in BGR32 packed format, by default.
+
+Tables:
+"Zebra  Iris GTX
+feature",GTX2000,GTX2000C,GTX5000,GTX5000C,GTX8000,GTX8000C
+Sensor chip type,"1/2.2""-type",,"2/3""-type",,"1/1.1""-type",
+"Effective
+resolution",1920x1200,,2592x2048,,4096x2160,
+"Color /
+Monochrome",Monochrome,Color,Monochrome,Color,Monochrome,Color
+Frame ratea,70.7 fps,17.6 fps,41.7 fps,10.4 fps,39.6 fps,9.9 fps
+
+Zebra  Iris GTX feature,GTX12000,GTX12000C,GTX16000,GTX16000C
+Sensor chip type,"1""-type",,"1.1""-type",
+Effective resolution,4096x3072,,4000x4000,
+Color / Monochrome,Monochrome,Color,Monochrome,Color
+Frame ratea,28 fps,7.0 fps,21.6 fps,5.4 fps
+
+==== Page Separator ====
+
+Page 10
+10 Chapter 1: Before you begin
+Inspecting your Zebra  Iris GTX package
+You should check the contents of your Zebra  Iris GTX package when you first
+open it. If something is missing or damaged, contact your Zebra  representative.
+Zebra  Iris GTX with Design Assistant base package
+If you purchased the Zebra  Iris GTX with Design Assistant base package, it
+includes the following:
+• Zebra  Iris GTX smart camera. This includes the Zebra  Design Assistant
+runtime environment, the MIOS operating system, and some preloaded utilities
+(for example, Putty, FileZilla, and Virtual Network Computing). It also includes
+a run-time license for some common Zebra  Design Assistant steps; for a detailed
+list of steps that are included, please visit our website
+http://www.Zebra .com/imaging/en.
+(cid:129) IP lens case.
+(cid:129) VGA/USB connector cap.
+(cid:129) Liquid lens connector cap.
+(cid:129) Zebra  Design Assistant installation files on a USB key.
+Note that your Zebra  Iris GTX base package does not include any cables, a power
+supply, nor a manual iris lens. To purchase these items, contact a Zebra  sales
+representative.
+
+Tables:
+==== Page Separator ====
+
+Page 11
+Inspecting your Zebra  Iris GTX package 11
+Zebra  Iris GTX starter kit
+There are two versions of the Zebra  Iris GTX starter kit. The
+GTX-STARTER-KIT is meant for use with all Zebra  Iris GTX smart cameras
+with sensors less than 5 Mpixels; these kits include a standard sized lens. The
+GTX5000-STR-KIT is meant for use only with the Zebra  Iris GTX 5000 series
+of smart cameras (which have a 5 Mpixel sensor); this kit includes a slightly larger
+lens. Both Zebra  Iris GTX starter kits include the following:
+(cid:129) External power supply.
+(cid:129) M12-CBL-ETH/5, a 100/1000 BaseT Ethernet cable with an M12 8-pin (male)
+X-coded connector on one end and an RJ-45 registered jack on the other. This
+cable connects your Zebra  Iris GTX to another computer or a network.
+(cid:129) M12-CBL-PWR/3, a Digital I/O and power cable with an M12 12-pin (male)
+connector on one end and open ended wires on the other. This cable connects
+your Zebra  Iris GTX to power and third-party digital I/O devices.
+(cid:129) GTR-CBL-VGAUSB, a VGA/USB cable with an M12 12-pin (female) connector
+on one end and a HD-15 (female) connector and a USB connector on the other
+end. This cable connects your Zebra  Iris GTX to a display device and a USB
+device (such as, a keyboard or mouse).
+(cid:129) One C-mount lens.
+(cid:129) Zebra  I/O Breakout Box. This device contains several wire terminal blocks,
+switches, and push buttons. It is designed to provide a means to connect
+third-party devices to your Zebra  Iris GTX in a development environment or
+on the production floor.
+Handling The lens of Zebra  Iris GTX is a sensitive device. It should never be touched
+precautions directly. Always cover the lens if the smart camera is not in use to reduce dust
+buildup. If dust accumulates on the lens, use either a can of compressed air or a
+lens cloth to remove the dust.
+
+Tables:
+==== Page Separator ====
+
+Page 12
+12 Chapter 1: Before you begin
+Available separately
+The following items are available separately.
+(cid:129) Zebra  I/O Breakout Box. This open enclosed-board contains several wire
+terminal blocks, switches, and push buttons. It is designed to provide a means to
+connect third-party devices to your Zebra  Iris GTX in a development
+environment or production floor.
+(cid:129) M12-CBL-PWR/3, an open-wire digital I/O and power cable. On one end is an
+M12 12-pin (male) connector. The other end consists of 12 separately-colored
+wires. This cable is meant to connect your Zebra  Iris GTX to your
+Zebra  I/O Breakout Box, or to obtain power and to connect with third-party
+digital I/O devices. For more details about this cable, refer to the Digital I/O and
+power connector subsection of the Zebra  Iris GTX connectors section, in
+Appendix B: Technical reference.
+(cid:129) M12-CBL-ETH/5, a 100/1000 BaseT Ethernet cable with an M12 8-pin (male)
+X-coded connector on one end and an RJ-45 registered jack on the other. For
+more details about this cable, refer to the 100/1000 BaseT Ethernet connector
+subsection of the Zebra  Iris GTX connectors section, in Appendix B: Technical
+reference. This cable is meant to connect your Zebra  Iris GTX to another
+computer or network device.
+(cid:129) GTR-CBL-VGAUSB, a VGA and USB cable with an M12 12-pin (female)
+connector on one end and a HD-15 (female) connector and a USB connector on
+the other end. For more details about this cable, refer to VGA/USB connector
+subsection of the Zebra  Iris GTX connectors section, in Appendix B: Technical
+reference. This cable is meant to connect your Zebra  Iris GTX to a display device
+and a USB device (such as, a keyboard or mouse).
+
+Tables:
+==== Page Separator ====
+
+Page 13
+Software overview 13
+Third-party supported devices
+The following items are available from third-party suppliers. Your Zebra 
+Iris GTX was designed to work with them, but they are optional.
+(cid:129) Light controllers (such as, the Advanced Illumination inline control system or the
+Smart Vision Lights brick light). These can be used to control your strobe (or
+light). Your Zebra  Iris GTX provides a signal to control the connected light’s
+intensity. For information, refer to Digital I/O and power connector subsection of
+the Zebra  Iris GTX connectors section, in Appendix B: Technical reference.
+(cid:129) Varioptic Caspian C-39N0-160-I2C or C-39N0-250-I2C lens (liquid lens). This
+lens is available from Varioptic and fits inside your Zebra  Iris GTX’s IP lens case
+for IP67 compatibility. For more details about how to connect this lens, refer to
+Optionally connecting a liquid lens section, in Chapter 2: Powering and connecting
+to your Zebra  Iris GTX.
+Software overview
+The Zebra  Iris GTX with Design Assistant is distributed with Zebra  Design
+Assistant, a flowchart-based, integrated development environment (IDE). It
+allows you to create an imaging application without writing a single line of code.
+Application development is a step-by-step approach, where each step is taken from
+an existing toolbox and is configured through a series of dialog windows. Zebra 
+Design Assistant runs on your development computer and uses the resources of
+your Zebra  Iris GTX smart camera (for example, to grab an image and
+communicate with connected devices) to build projects. Once the project is built,
+it runs on your Zebra  Iris GTX without relying on the resources of your
+development computer.
+With Zebra  Design Assistant, you can:
+(cid:129) Create your project as a series of steps using a flowchart.
+(cid:129) Test your project from your computer without any additional code editors or
+compilers and without deploying (copying and running) your project on your
+Zebra  Iris GTX.
+(cid:129) Design and layout a web page (operator view) to receive operator input and to
+display your project's output.
+
+Tables:
+==== Page Separator ====
+
+Page 14
+14 Chapter 1: Before you begin
+(cid:129) Run, terminate, and re-run the project on your Zebra  Iris GTX from within
+Zebra  Design Assistant.
+Imaging projects can:
+(cid:129) Grab images from your Zebra  Iris GTX or use images from disk.
+(cid:129) Analyze images using several industry-proven image analysis and measurement
+tools (for example, code reader and Geometric Model Finder tools).
+(cid:129) Send and receive user-defined signals from the Digital I/O and power connector
+of your Zebra  Iris GTX.
+(cid:129) Send and receive information and save images across the network using TCP/IP,
+Modbus, CCLink, EtherNet/IP, and PROFINET protocols.
+Documentation conventions
+Your Zebra  Iris GTX is a network-aware device. The terminology used
+throughout this document mirrors that of local area networks (LANs).
+In this document, any computer that can communicate with your Zebra 
+Iris GTX is referred to as “your computer”. If you use your computer to develop
+your applications for your Zebra  Iris GTX, it is referred to as your development
+computer.
+The procedure to select a menu item from a submenu uses a simplified format.
+For example, the following procedure:
+Select the Edit menu item from the main menu, and then select the Copy
+menu command from the presented submenu.
+will be replaced by:
+Select the Edit Copy menu item.
+
+Tables:
+==== Page Separator ====
+
+Page 15
+Zebra  Iris GTX safety warnings and key to symbols 15
+Zebra  Iris GTX safety warnings and key to
+symbols
+Before connecting to and using your Zebra  Iris GTX, you should be aware of
+the meaning of the symbols on the smart camera and the important safety
+precautions. The following is a list of precautionary symbols on Zebra  Iris GTX
+and their meaning.
+Symbola Description
+The case of your Zebra  Iris GTX can become quite hot and should not be touched while operating.
+Always allow hot surfaces to cool down before touching your Zebra  Iris GTX.
+• Caution: Consult this manualb before connecting to and using Zebra  Iris GTX. For hardware connection
+instructions, refer to Chapter 2: Powering and connecting to your Zebra  Iris GTX; for environmental and
+electrical specifications and connector pinout descriptions, refer to Appendix B: Technical reference.
+o This product must be used as specified; otherwise, the protection provided by its components might be
+compromised.
+• Refer to the Electrical specifications section, in Appendix B: Technical reference of this manual, for voltages
+and current ratings.
+• There are no serviceable parts inside this product. In case of defect, contact your Zebra  representative.
+• To maintain IP67 conformity, all unused connectors on your Zebra  Iris GTX must be capped and the IP case
+must be screwed firmly into place.
+• This product meets the requirements of a Category 1 installation as per industry standardsc.
+• This product is designed for use in a pollution degree 2 environment as per industry standardsc.
+• This product is designed for indoor use only.
+• This product is designed to operate at temperatures ranging from 0°C to 45°C at a non-condensing relative
+humidity maximum of 99%.
+• This product is not intended for use at altitudes exceeding 2000 m.
+DC current only.
+Your Zebra  Iris GTX can only be powered using a 24 V DC power source.
+a. Note that these symbols might not necessarily be the same color as depicted.
+b. Manual available on the Zebra  Imaging website at http://www.Zebra .com/imaging
+c. As per CAN/CSA-C22.2 No 61010-1-12, UL std. No 61010-1 (3rd edition), and EN Std. No. 61010-1 (3rd Edition)
+
+Tables:
+Symbola,Description
+,"The case of your Zebra  Iris GTX can become quite hot and should not be touched while operating.
+Always allow hot surfaces to cool down before touching your Zebra  Iris GTX."
+o,"• Caution: Consult this manualb before connecting to and using Zebra  Iris GTX. For hardware connection
+instructions, refer to Chapter 2: Powering and connecting to your Zebra  Iris GTX; for environmental and
+electrical specifications and connector pinout descriptions, refer to Appendix B: Technical reference.
+This product must be used as specified; otherwise, the protection provided by its components might be
+compromised.
+• Refer to the Electrical specifications section, in Appendix B: Technical reference of this manual, for voltages
+and current ratings.
+• There are no serviceable parts inside this product. In case of defect, contact your Zebra  representative.
+• To maintain IP67 conformity, all unused connectors on your Zebra  Iris GTX must be capped and the IP case
+must be screwed firmly into place.
+• This product meets the requirements of a Category 1 installation as per industry standardsc.
+• This product is designed for use in a pollution degree 2 environment as per industry standardsc.
+• This product is designed for indoor use only.
+• This product is designed to operate at temperatures ranging from 0°C to 45°C at a non-condensing relative
+humidity maximum of 99%.
+• This product is not intended for use at altitudes exceeding 2000 m."
+,"DC current only.
+Your Zebra  Iris GTX can only be powered using a 24 V DC power source."
+
+==== Page Separator ====
+
+Page 16
+16 Chapter 1: Before you begin
+Manual overview
+This manual provides all the information required to power, connect, and
+configure your Zebra  Iris GTX to develop and deploy imaging applications.
+For information on powering your Zebra  Iris GTX, reading the LEDs,
+connecting your smart camera to your network, and connecting to it remotely,
+and connecting it to third-party devices, refer to Chapter 2: Powering and
+connecting to your Zebra  Iris GTX.
+For a summary of the key features of Zebra  Iris GTX, and pinout descriptions
+for external connectors of your Zebra  Iris GTX, refer to Appendix B: Technical
+reference.
+If you have a Zebra  Iris GTX with Design Assistant, to use the various utilities
+and to recover the Zebra  Imaging operating system (MIOS) on a Zebra 
+Iris GTX, refer to Appendix C: Zebra  Imaging operating system utilities and
+recovery.
+Need help?
+For the most recent version of this manual, check the product page of Zebra 
+Iris GTX on the Zebra  imaging website.
+If you experience problems during installation or while using this product, you
+can refer to the support page on the Zebra  Imaging web site:
+http://www.Zebra .com/en/imaging/support/tech-support. The support page
+provides information on how to contact technical support.
+To request support, you should first complete and submit the online Technical
+Support Request Form, accessible from the above-mentioned web page. Once you
+have submitted the information, a Zebra  support agent will contact you shortly
+thereafter by email or phone, depending on the problem.
+
+Tables:
+==== Page Separator ====
+
+Page 17
+Chapter2
+Powering and
+Chapter 2:
+connecting to your
+Zebra  Iris GTX
+This chapter guides you through powering your Zebra 
+Iris GTX, connecting it to another device, and reading the
+LEDs.
+
+Tables:
+C,hap,ter,2,,
+
+==== Page Separator ====
+
+Page 18
+18 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+Powering and connecting to your
+Zebra  Iris GTX
+The Zebra  Iris GTX has the following interfaces (from left to right):
+(cid:129) Digital I/O and power connector. Used to receive power from an external power
+source. The connector can also receive trigger input and send/receive digital
+auxiliary I/O signals to/from third-party I/O devices. In addition, the connector
+has a specialized analog intensity (dimming) control signal intended to be used
+with a lighting device (such as, an Advanced Illumination inline control system
+(ICS3), a Smart Vision Lights Brick light, or a similar device).
+(cid:129) VGA/USB connector. Provides connectivity between your Zebra  Iris GTX and
+a display device and/or a USB device (such as a keyboard or a mouse).
+(cid:129) 100/1000 BaseT Ethernet connector. Provides connectivity between your
+Zebra  Iris GTX and your computer or your network. Zebra  Iris GTX can gain
+access to a LAN via Gbit Ethernet (GigE, 1G BaseT, or 1000BaseT), fast Ethernet
+(100BaseT), or twisted pair Ethernet (10BaseT). This interface can also be used
+for communication with external devices using the PROFINET, EtherNet I/P,
+CCLink, or Modbus protocol. For PROFINET, the interface operates as a
+hardware-assisted PROFINET interface. The LAN connection associated with
+the hardware-assisted PROFINET interface can be shared with other traffic.
+
+Tables:
+==== Page Separator ====
+
+Page 19
+Powering and connecting to your Zebra  Iris GTX 19
+(cid:129) Liquid lens connector (not depicted). Used to provide automatic focusing of your
+Varioptic Caspian C-39N0-160-I2C or C-39N0-250-I2C lens.
+To use your Zebra  Iris GTX, perform the following:
+1. Connect an external power supply and your third-party I/O devices to the Digital
+I/O and power connector of your Zebra  Iris GTX using the provided cable.
+If you have purchased the Zebra  Iris GTX starter kit use the open-ended digital
+I/O and power cable and Zebra  I/O Breakout Box, included in the kit, to make
+the connections.
+If you have purchased Zebra  I/O Breakout Box separately, you can make your
+own cable. Alternatively, you can use the M12-CBL-PWR/3 open-wire digital I/O
+and power cable from Zebra ; however, you must use a custom cable to connect
+it to a power supply. For more information regarding the pin-out of your Zebra 
+Iris GTX power and I/O connector, refer to the Digital I/O and power connector
+subsection of the Zebra  Iris GTX connectors section, in Appendix B: Technical
+reference.
+2. Connect your display device and USB device to the VGA/USB connector of your
+Zebra  Iris GTX using the VGA/USB cable (either the cable from the starter kit
+or GTR-CBL-VGAUSB).
+Alternatively, you can build your own. For more information regarding the pin-out
+of your Zebra  Iris GTX VGA/USB connector, refer to the VGA/USB connector
+subsection of the Zebra  Iris GTX connectors section, in Appendix B: Technical
+reference.
+There are multiple ways to connect devices to the VGA/USB cable. If connecting
+to a display device that has a VGA connector available, we recommend using it.
+To connect your Zebra  Iris GTX to a display device and one or more input
+devices (such as a keyboard and mouse), connect a USB hub to the USB connector
+
+Tables:
+==== Page Separator ====
+
+Page 20
+20 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+of your VGA/USB cable. Once the hub is connected, connect your keyboard and
+mouse to the hub. Note that, in some cases, your display device can also act as a
+USB hub.
+displaydevice
+VGA
+USB
+display
+VGA device&
+hub
+USB
+Hub
+VGA
+displaydevice
+[o
+Note that if you are using a Zebra  VGA/USB cable, the cable has a type A USB
+connector.
+If you are not using this connector, the VGA/USB cap must remain in place for
+IP67 conformity.
+If connecting the Zebra  VGA/USB cable to a device requiring a type B connector,
+use a type A to type B USB cable to connect the VGA/USB cable to your device.
+
+Tables:
+==== Page Separator ====
+
+Page 21
+Powering and connecting to your Zebra  Iris GTX 21
+3. Connect your network or your computer (peer-to-peer) to the Zebra  Iris GTX
+100/1000 BaseT Ethernet connector using a network cable with an M12 8-pin
+X-coded connector on one end (either the cable from the starter kit or
+M12-CBL-ETH/5).
+Connect the RJ45 connector of the cable to the network connector of your
+network/computer.
+After making the network connection, you might need to configure your Zebra 
+Iris GTX so that it can communicate with your network or computer. To do so,
+refer to Adding Zebra  Iris GTX to your network section, later in this chapter.
+If not using the network connection, the connector must be capped to maintain
+IP67 conformity.
+4. Connect your lens to the Zebra  Iris GTX housing, screwing it in firmly. Note
+that if you are using a Varioptic Caspian C-39N0-160-I2C or C-39N0-250-I2C
+lens, refer to Optionally connecting a liquid lens section, later in this chapter.
+Important Screw on the IP lens case until it is firmly in place over the lens and on the Zebra 
+Iris GTX housing. Note that the IP lens case must be in place for IP67 conformity.
+5. If using your Zebra  Iris GTX in a deployment environment, you must fasten
+your smart camera to a support using its provided mounting holes. For the
+dimensions of the mounting holes, refer to the Dimensions section, in
+Appendix B: Technical reference.
+
+Tables:
+==== Page Separator ====
+
+Page 22
+22 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+Optionally connecting a liquid lens
+If using a Varioptic Caspian C-39N0-160-I2C or C-39N0-250-I2C lens, it must
+be connected to your Zebra  Iris GTX’s liquid lens connector.
+IPlens case
+Liquid lens
+cable
+Varioptic
+Unused Caspian lens
+cable
+Liquid lens
+connector
+Zebra  Iris GTX
+To do so, perform the following steps:
+1. Disconnect the power from your Zebra  Iris GTX.
+2. If in place, unscrew the IP lens case from your Zebra  Iris GTX.
+
+Tables:
+==== Page Separator ====
+
+Page 23
+Optionally connecting a liquid lens 23
+3. Remove the plug covering the liquid lens connector inside the camera lens
+housing, using non-conductive tweezers.
+4. Screw the lens onto the lens enclosure, until it is firmly in place.
+5. The Varioptic Caspian lens has two cables. Wrap the longer cable (with the 6-pin
+connector) tightly around the Varioptic Caspian lens housing.
+6. Plug the 6-pin connector of your Varioptic Caspian lens into the liquid lens
+connector on your Zebra  Iris GTX. To do so, use non-conductive tweezers. Once
+the connector is in place, use the tweezers to press firmly on either side of the
+connector to ensure a good connection.
+7. Tuck the 3-pin connector (and its branched wire) into the folds of the longer cable.
+The 3-pin connector is not used.
+8. Slide the IP lens case over the lens, and screw it into the Zebra  Iris GTX housing,
+until it is firmly in place.
+ Note that the IP lens case must be in place for IP67 conformity.
+9. Reconnect the power to your Zebra  Iris GTX.
+
+Tables:
+==== Page Separator ====
+
+Page 24
+24 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+Adding Zebra  Iris GTX to your network
+Corporate-wide networks typically use DHCP servers to assign each connected
+device an IP address. If your Zebra  Iris GTX is still in its factory-configured state,
+and your network uses a DHCP server, no configuration is required to use your
+Zebra  Iris GTX on your network.
+Much of the information found in this section is directed to users with a Zebra 
+Iris GTX camera with Zebra  Design Assistant, because in this case, the camera
+uses the Zebra  Imaging Operating System (MIOS).
+Device name (AUTO NETNAME)
+By default, Zebra  Iris GTX comes factory configured with a device name
+(AUTO NETNAME), which can be found on a sticker attached to your Zebra 
+Iris GTX smart camera and is unique for each camera. If you are connecting to a
+static network, use the IP address of the camera; otherwise, if you are connected
+to a DHCP network, this name is used:
+GTXxxxxxx
+The xxxxxx corresponds to the six hexadecimal digits of your Zebra  Iris GTX’s
+MAC address. This can be changed to a more meaningful name through the
+Zebra  Design Assistant configuration portal.
+The Zebra  Design Assistant configuration portal on your Zebra  Iris GTX is
+located at http:\\GTXxxxxxx, where GTXxxxxxx is your smart camera’s device
+name. This portal allows you to manage many aspects of your smart camera (for
+example, configure settings, manage projects, and set up communication). You
+can change network settings in the TCP/IP tab of the Administration page (gear
+icon), where you can also change the device name (AUTO NETNAME) of your
+camera.
+Using a static IP address with networks that do not use DHCP
+If your network does not use DHCP, you must access and configure your Zebra 
+Iris GTX to use a static IP address. To access Zebra  Iris GTX when you don’t
+know its current IP address, you can physically connect to it or use the Zebra 
+System Discovery (MtxSysDiscovery) utility on your development computer.
+
+Tables:
+==== Page Separator ====
+
+Page 25
+Adding Zebra  Iris GTX to your network 25
+Connecting directly to your Zebra  Iris GTX
+If you do not know your Zebra  Iris GTX’s IP address, you can physically connect
+to it and change its IP address; to do so, perform the following:
+1. Connect your Zebra  Iris GTX to a monitor, mouse, and USB keyboard. Then,
+turn on the connected monitor, mouse, and USB keyboard before plugging in
+your Zebra  Iris GTX to a power source.
+2. On your Zebra  Iris GTX, launch your web browser, and go to the following
+address:
+http:\\localhost
+3. When the Zebra  Design Assistant configuration portal loads, go to the
+Administration page by clicking on the gear button.
+4. Click on the TCP/IP tab.
+5. Enter the IP address, subnet mask, and gateway address in the spaces provided.
+When done, click on the Save settings button.
+Your IP address is now changed.
+Using the Zebra  System Discovery utility for Zebra  Iris GTX
+If you do not know your Zebra  Iris GTX’s IP address, you can use the Zebra 
+System Discovery (MtxSysDiscovery) utility to access it and change its IP address;
+to do so, perform the following:
+1. On your development computer (where Zebra  Design Assistant is installed),
+launch the MIL Control Center utility.
+2. In the MIL Control Center utility, select Design Assistant Tools for the version
+of Zebra  Design Assistant.
+3. In the Design Assistant Tools directory, select and run the Zebra  System
+Discovery utility (MtxSysDiscovery).
+The Zebra  Iris GTX will find all the Zebra  Iris GTXs on the same subnet, and
+allow you to modify their communication settings.
+
+Tables:
+==== Page Separator ====
+
+Page 26
+26 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+Connecting to your Zebra  Iris GTX desktop
+From your smart camera‘s desktop, you can launch the MILConfig utility (to
+configure updates, assist in troubleshooting your runtime application with Zebra 
+technical support, and set default values), as well as access files stored on your
+smart camera.
+Accessing your Zebra  Iris GTX desktop remotely
+If you do not want to keep a keyboard, mouse, and monitor connected to your
+Zebra  Iris GTX, once your smart camera is on your network, you can connect
+to your Zebra  Iris GTX remotely by using a virtual network computing (VNC)
+program. Several VNC programs are available on the Internet. A few choice
+examples are available to download directly from your smart camera. To download
+and install one of these programs, perform the following:
+1. For Zebra  Iris GTX with Design Assistant users, go to the following web address:
+http:\\GTXxxxxxx:8080
+Replace xxxxxx with the six digits of your smart camera’s MAC address, or if you
+have changed the camera’s device name, replace GTXxxxxxx with its new name.
+You can also replace GTXxxxxxx with the smart camera’s IP address.
+2. Select the installer that best matches your needs.
+Follow all on-screen instructions. Refer to the provided documentation for
+assistance.
+3. Before using the installed VPN, you must first enable Auto logon in the Zebra 
+Design Assistant portal.
+Logging in When using VNC for the first time, you must log into your Zebra  Iris GTX
+using the default user account:
+User name: mtxuser
+Password: Zebra 
+Warning Do not delete or rename the mtxuser account. You can however change the
+password.
+
+Tables:
+User name:,mtxuser
+Password:,Zebra 
+
+==== Page Separator ====
+
+Page 27
+Connecting to your Zebra  Iris GTX desktop 27
+Accessing your Zebra  Iris GTX from your PC
+Once your Zebra  Iris GTX is added to your network, you can remotely access
+the hard disk of your Zebra  Iris GTX using Microsoft Windows Explorer.
+Typically, Zebra  Iris GTX will be listed as a computer under the Network folder.
+When you try to access the files on your Zebra  Iris GTX, you are prompted for
+a user name and password. Note that these fields are case-sensitive.
+If you are accessing your camera from a computer on a separate domain, remember
+to suffix the camera’s name with the camera’s device name:
+\\GTXxxxxxx\mtxuser
+On Zebra  Iris GTX with Zebra  Design Assistant, several folders are shared by
+default, including the mtxuser user’s folder.
+In Zebra  Design Assistant, you can use the PATH function with predefined
+settings to access a few of the more commonly used paths.
+Type of files File path Path command in Zebra  Examples
+Design Assistant
+Zebra  Design \\GTXxxxxxx\mtxuser\Documents PATH("DA Documents") {PATH("DA Documents")}\\SavedImages
+{PATH("DA Documents")}\\SavedTextFiles
+Assistant
+{PATH("DA Documents")}\\Images
+Documents
+Zebra  Design \\GTXxxxxxx\mtxuser\da\Projects PATH("DA Project") {PATH("DA Project")}\\Images
+Assistant Project
+files
+
+Tables:
+Type of files,File path,"Path command in Zebra 
+Design Assistant",Examples
+"Zebra  Design
+Assistant
+Documents",\\GTXxxxxxx\mtxuser\Documents,"PATH(""DA Documents"")","{PATH(""DA Documents"")}\\SavedImages
+{PATH(""DA Documents"")}\\SavedTextFiles
+{PATH(""DA Documents"")}\\Images"
+"Zebra  Design
+Assistant Project
+files",\\GTXxxxxxx\mtxuser\da\Projects,"PATH(""DA Project"")","{PATH(""DA Project"")}\\Images"
+
+==== Page Separator ====
+
+Page 28
+28 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+Connecting to the auxiliary I/O interface
+Zebra  Iris GTX has an auxiliary I/O interface with 7 optically isolated auxiliary
+signals. Four are inputs that support sinking and sourcing configurations and can
+receive 24 V. Three are outputs that support sinking configurations and operate
+at up to 24 V nominal; you could connect one of the outputs in a sourcing
+configuration, but the other two outputs would no longer be available. Zebra 
+Iris GTX also has an analog intensity (dimming) control signal, which is discussed
+in the Connecting a light controller and the analog intensity control signal section
+later in this chapter.
+Note that sinking and sourcing concepts refer to the conventional current flow,
+which means current flows from the positive potential towards the negative
+potential. A sinking device provides a path to sink current towards ground or to
+the return path; a sinking device does not provide power. A sourcing device
+provides a path that sources current; it provides a path from the power source. In
+the following diagram, the device on the right is the sourcing device, and the device
+on the left is the sinking device.
+Vcc
++
+Sinking Sourcing
++ -
+device device
+-
+Equivalent circuit only
+When setting up auxiliary I/O, be aware that you need to configure these pins on
+the software side as well. If you are using Zebra  Design Assistant, refer to the
+Connecting to your Zebra  Iris GTX as your runtime platform section of the Zebra 
+Iris GTX appendix in the Zebra  Design Assistant help file for this information.
+
+Tables:
+==== Page Separator ====
+
+Page 29
+Connecting to the auxiliary I/O interface 29
+Connecting devices to the auxiliary output signals
+Zebra  Iris GTX auxiliary output signals can be interfaced with input modules
+(with sourcing or sinking input signals) found on most programmable logic
+controllers (PLCs) and other devices. The auxiliary output signals can also be
+interfaced with inductive load devices (such as a relay or a small motor).
+The Zebra  Iris GTX auxiliary output signals are sinking output signals, based
+on an NPN-type transistor. They need to be connected to an external power source
+because on their own, they are not capable of providing voltage to drive a device.
+They are typically connected in a sinking configuration because they only have
+one dedicated pin (AUX_OUT0, AUX_OUT1, AUX_OUT2, respectively) and
+share their other pin (AUX_OUT_COMMON). So, typically, a sourcing device
+is connected to their dedicated pin and the return path is connected to the
+common pin. The exact connection between the output signal, the connected
+device, and the power source depends on the type of device to which you connect.
+Connecting three sourcing devices to sinking auxiliary output signals
+Up to 24 V
+fuse +
+AUX_OUT0 -
+Up to 24 V
+fuse +
+-
+AUX_OUT1
+Up to 24 V
+fuse +
+AUX_OUT2 -
+Sourcing devices
+AUX_OUT_COMMON
+Zebra  Iris GTX VDC- (typical)
+(in a sinking configuration)
+Equivalent circuit only
+
+Tables:
+,
+
+,
+
+,
+
+==== Page Separator ====
+
+Page 30
+30 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+You can also connect a single auxiliary output signal in a sourcing configuration,
+such that the common pin is connected to a sinking device and the dedicated pin
+is connected to the power supply. However, in this configuration, the other two
+auxiliary output signals are not available. The exact connection between the output
+signal, the connected device, and the power source depends entirely on the type
+of device to which you connect.
+Connectingonesourcingauxiliaryoutputsignaltoasinkingdevice.
+Up to 24 V
+fuse
+AUX_OUT0
+Sinking device
+AUX_OUT_COMMON +
+-
+Zebra  Iris GTX
+(in a sourcing configuration) VDC- (typical)
+Equivalent circuit only
+When an auxiliary output signal is on, the circuit between its AUX_OUT pin and
+AUX_OUT_COMMON pin is closed, allowing current to flow from the
+AUX_OUT pin to the AUX_OUT_COMMON pin, if the AUX_OUT pin is
+attached to a power source or a sourcing device. When an auxiliary output signal
+is off, the circuit between the AUX_OUT and AUX_OUT_COMMON pins of
+the signal is open and no current flows through.
+Important Note that the power source must be provided externally.
+
+Tables:
+,
+
+==== Page Separator ====
+
+Page 31
+Connecting to the auxiliary I/O interface 31
+When the auxiliary output signal is attached to a device, the following can be
+observed:
+Observed voltage
+Signal on Signal off
+Connection Observed at (closed so current can flow from (open so current cannot flow from
+AUX_OUT to AUX_OUT_COMMON AUX_OUT pin to AUX_OUT_COMMON
+pin) pin)
+Sourcing device attached AUX_OUT pin Low Floating
+to AUX_OUT pin (voltage level is imposed
+and return path by the sourcing device)
+attached to
+AUX_OUT_COMMON pin Low Low
+AUX_OUT_COMMON pin
+Power supply attached to AUX_OUT pin High High
+AUX_OUT pin
+AUX_OUT_COMMON pin High Floating
+and sinking device
+(voltage level is imposed by the sinking
+attached to
+device)
+AUX_OUT_COMMON pin
+Connecting to a The auxiliary output signals can, therefore, only present one predictable voltage
+digital device that level for a given configuration: a low voltage level in a sinking configuration or a
+requires two high voltage level in a sourcing configuration. Their other output state is, by
+predictable voltage default, floating. So, if you need to connect to a digital device that requires two
+levels to operate
+predicable voltage levels to operate, pullup or pull-down circuitry must be added.
+Connection required if using external pullup circuitry
++
+AUX_OUT
+Up to 24V
+-
+AUX_OUT_COMMON
+Optional.
+Equivalent circuit only
+
+Tables:
+Connection,Observed at,Observed voltage,
+,,"Signal on
+(closed so current can flow from
+AUX_OUT to AUX_OUT_COMMON
+pin)","Signal off
+(open so current cannot flow from
+AUX_OUT pin to AUX_OUT_COMMON
+pin)"
+"Sourcing device attached
+to AUX_OUT pin
+and return path
+attached to
+AUX_OUT_COMMON pin",AUX_OUT pin,Low,"Floating
+(voltage level is imposed
+by the sourcing device)"
+,AUX_OUT_COMMON pin,Low,Low
+"Power supply attached to
+AUX_OUT pin
+and sinking device
+attached to
+AUX_OUT_COMMON pin",AUX_OUT pin,High,High
+,AUX_OUT_COMMON pin,High,"Floating
+(voltage level is imposed by the sinking
+device)"
+
+==== Page Separator ====
+
+Page 32
+32 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+To add pullup or pull-down circuitry, attach an external pullup or pull-down
+resistor, respectively. A resistance value of 3 KOhms is suggested to protect your
+Zebra  Iris GTX. Since your Zebra  Iris GTX auxiliary output signals can sink
+up to 50 mA, use the documentation of your input to calculate the required
+resistance for your external pullup/pull-down resistor (if necessary).
+In the connections above, the pullup circuitry causes an inversion if the input of
+the device is connected to the AUX_OUT pin. When the auxiliary output signal
+is on, the circuit between its AUX_OUT and AUX_OUT_COMMON pins is
+closed, and current flows from the power source to the AUX_OUT_COMMON
+pin. So the observed voltage at the AUX_OUT pin will be low. Whereas, when
+the auxiliary output signal is off, the circuit between its AUX_OUT and
+AUX_OUT_COMMON pins is open, and current flows from the power source
+to the input of the device. In this state, the current is limited by the pullup’s resistor
+value.
+Warning The Zebra  Iris GTX auxiliary output signals are compatible with voltages up to
+24 V. However, by default, the auxiliary output signals offer low resistance. When
+they are on (their circuit is closed), current flows directly through them. Ensure
+that the circuit created between the power source, the output signal, the connected
+device, and return path does not cause more than 50 mA to flow through the
+signal.
+As a precaution, the auxiliary output signals are individually fuse-protected up to
+50 mA. Zebra  Iris GTX uses resettable fuses. The fuses protect Zebra  Iris GTX
+if you accidentally connect their corresponding auxiliary output signal to a device
+that sources/sinks more current than Zebra  Iris GTX can safely transmit. If more
+than 50 mA of current goes through your Zebra  Iris GTX, the fuse will
+eventually trip. After disconnecting your Zebra  Iris GTX, the fuse will reset only
+after it has sufficiently cooled,
+
+Tables:
+==== Page Separator ====
+
+Page 33
+Connecting to the auxiliary I/O interface 33
+The diagram below depicts Zebra  Iris GTX’s on-board fuse.
+aux_out max.50mA
+fuse
+aux_out_common
+Equivalent circuit only
+Optically-isolated The Zebra  Iris GTX auxiliary output signals are optically isolated from the power
+output signals and analog intensity (dimming) control signal as well as from the Zebra  Iris GTX
+auxiliary input signals. They are not, however, optically isolated from each other
+as they share a common pin (AUX_OUT_COMMON).
+About the The following subsections detail how to connect the most common third-party
+connections in the devices to the Zebra  Iris GTX auxiliary output signals. Ground is only shown
+following in the following subsections for reference, in case you need to reference your return
+subsections path to ground. To connect to a light controller (such as, an Advanced
+Illumination or Smart Vision Lights lighting controller), see Connecting a light
+controller and the analog intensity control signal section later in this chapter.
+Power, as depicted in the following diagrams, represents a nominal voltage of up
+to 24 V (+/- 10%). For minimum and maximum voltage requirements, refer to
+the electrical specification of the opto-isolated output signals, in
+Appendix B: Technical reference.
+The signal names in this section are shortened to fit within the diagrams: from
+M_AUX_OPTOIND_OUTn to AUX_OUT and from
+M_AUX_OPTOIND_OUT_COMMON to AUX_OUT_COMMON.
+
+Tables:
+"aux_out
+fuse
+aux_out_common",max.50mA
+
+==== Page Separator ====
+
+Page 34
+34 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+Connecting an auxiliary output signal to a sourcing input
+Connect a Zebra  Iris GTX auxiliary output signal to a sourcing input, as shown
+below.
+COM
+Inputsensing
++
+AUX_OUT INPUT
+Up to 24V
+Sourcing device
+–
+AUX_OUT_COMMON
+Zebra  Iris GTX
+Sinking configuration
+Optional because the auxiliary output signals are optically isolated.
+Equivalent circuit only
+Note that, when connecting a resistive load sourcing device instead of an input
+sensing sourcing device, the same connection would be used as displayed above.
+
+Tables:
+"COM
+Inputsensing
++
+AUX_OUT INPUT
+Up to 24V
+Sourcing device
+–
+AUX_OUT_COMMON
+Zebra  Iris GTX
+Sinking configuration
+Optional because the auxiliary output signals are optically isolated.","COM
+Inputsensing
+INPUT"
+
+==== Page Separator ====
+
+Page 35
+Connecting to the auxiliary I/O interface 35
+Connecting an auxiliary output signal to a sinking input
+Connect a Zebra  Iris GTX auxiliary output signal to a sinking input, as shown
+below. In this case, the pullup circuitry is used to source the current to the sinking
+input.
++
+AUX_OUT
+Up to 24V
+–
+AUX_OUT_COMMON INPUT
+Input
+Zebra  Iris GTX sensing
+Sourcing configuration
+COM
+Sinking device
+Optional because the auxiliary output signals are optically isolated.
+Equivalent circuit only
+Important In this configuration, the other two auxiliary output signals are not available.
+Note that, when connecting a resistive load sinking device instead of an input
+sensing sinking device, the same connection would be used as displayed above.
+
+Tables:
+==== Page Separator ====
+
+Page 36
+36 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+Connecting an auxiliary output signal to a sinking input using an external
+pullup resistor
+To not lose two of the available three auxiliary output signals, you can connect an
+auxiliary output signal to a sinking input as follows. Note that, in this
+configuration, you will need to connect an external pullup resistor. Since your
+Zebra  Iris GTX auxiliary output signals can sink up to 50 mA, use the
+documentation of your sinking device to calculate the required resistance for your
+external pullup resistor (if necessary).
++
+AUX_OUT INPUT
+Up to 24V
+Input
+–
+sensing
+AUX_OUT_COMMON COM
+Sinking device
+Zebra  Iris GTX
+Sourcing configuration
+Optional because the auxiliary output signals are optically isolated.
+Equivalent circuit only
+
+Tables:
+==== Page Separator ====
+
+Page 37
+Connecting to the auxiliary I/O interface 37
+Connecting an auxiliary output signal to an inductive load input
+Connect a Zebra  Iris GTX auxiliary output signal to an inductive load input, as
+shown below.
+An inductive load device, such as a traditional relay, requires that you use a
+flyback diode to protect Zebra  Iris GTX from over and under-voltage, as shown
+below. This diode should be connected as close as possible to the input and voltage
+source of your inductive load device.
++V
++
+AUX_OUT input
+Up to 24V
+Inductive load
+–
+AUX_OUT_COMMON
+Optional because the auxiliary output signals are optically isolated.
+Equivalent circuit only
+
+Tables:
+"+V
++
+AUX_OUT input
+Up to 24V
+Inductive load
+–
+AUX_OUT_COMMON
+Optional because the auxiliary output signals are optically isolated.","+V
+input"
+
+==== Page Separator ====
+
+Page 38
+38 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+Connecting devices to the auxiliary input signals
+Zebra  Iris GTX auxiliary input signals can be interfaced with a wide variety of
+devices (such as proximity detectors). The Zebra  Iris GTX auxiliary input signals
+only detect when current flows between their AUX_IN pin and
+AUX_IN_COMMON pin. As such, an auxiliary input signal must be connected
+to a device that controls the flow of current. When current is detected, the signal
+is reported as on; otherwise, it is reported as off. In software, you can enable an
+interrupt to be generated the moment current is detected. For information on the
+electrical specifications of the on and off voltage levels, see the Electrical
+specifications section, in Appendix B: Technical reference.
+Each of the four available auxiliary input signals has one dedicated pin (AUX_IN3,
+AUX_IN4, AUX_IN5, and AUX_IN6, respectively) and shares its other pin
+(AUX_IN_COMMON) with the other auxiliary input signals.
+You can connect the auxiliary input signals in a sinking or sourcing configuration.
+Since the auxiliary input signals share a common pin, they have to be all in a
+sinking configuration or all in a sourcing configuration. The exact connection
+between the input signal, the connected device, and the power source depends
+entirely on the type of device to which you connect. You should essentially connect
+your device respecting the following:
+Zebra  Iris GTX Sinking device Sourcing devices Zebra  Iris GTX Sourcing device
+24 V 24 V
++
+Sensing - AUX_IN_COMMON
+Circuit AUX_IN3
+24 V Sinkingdevices
+++
+SCeinrcsuinitg AUX_IN4 - SCeinrcsuinitg AUX_IN3 +
+-
+24 V
+++
+SCeinrcsuinitg AUX_IN5 - SCeinrcsuinitg AUX_IN4 +
+-
+24 V
++
+Sensing AUX_IN6 - Sensing Circuit AUX_IN5 +
+Circuit -
+AUX_IN_COMMON Sensing Circuit AUX_IN6 +
+-
+Connecting four sourcing devices to the Connecting four sinking devices to
+auxiliary input signal (sinking) the auxiliary input signals (sourcing)
+[
+Equivalent circuit only
+
+Tables:
+,,
+,,
+
+,,Sensing,
+,,Circuit,
+,,,
+,,Sensing,
+,,Circuit,
+,,,
+,,Sensing,
+,,Circuit,
+,,,
+,,,
+
+,
+
+,,Sensing,
+,,,
+,,Circuit,
+,,Sensing,
+,,Circuit,
+,,,
+
+,
+
+,
+
+,
+
+,
+
+,
+
+"+
+-",
+"+
+-",
+,
+
+Sensing
+Circuit
+""
+
+,
+
+==== Page Separator ====
+
+Page 39
+Connecting to the auxiliary I/O interface 39
+Pullup circuitry In some cases, you must add pullup circuitry to connect an output device to an
+auxiliary input signal; specifically, you must attach an external pullup resistor
+between the voltage source and the AUX_IN pin.
+This is required when you connect the AUX_IN_COMMON pin to the electrical
+return path and the third-party output device is in a sinking configuration. In this
+case, select a resistor value that will not overcurrent the output device and instead
+provide just enough current and voltage to your Zebra  Iris GTX auxiliary input
+signals, according to the Electrical specifications subsection in
+Appendix B: Technical reference. Note that you should use a resistor with an
+appropriate power rating for your circuit.
+Connection required if using external pullup circuitry
+AUX_IN
++
+Sensing
+24V
+Circuit
+-
+AUX_IN_COMMON
+Optional because the auxiliary input signals are optically isolated.
+Equivalent circuit only
+
+Tables:
+==== Page Separator ====
+
+Page 40
+40 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+Bleeding resistor By default, if properly configured, the current should flow from the AUX_IN pin
+to the AUX_IN_COMMON pin (when connected to a sourcing device), or from
+the AUX_IN_COMMON pin to the AUX_IN pin (when connected to a sinking
+device). In some cases, the amount of current going through the sensing circuit is
+insufficient for the connected output device to match its minimum current
+requirement when the device is in an on or off-state, depending on the
+configuration of the circuit. To boost the flowing current, connect a 2.2 kOhm
+external bleeder resistor between the AUX_IN and AUX_IN_COMMON pins.
+For example:
+AUX_IN
+Sensing ExternalBleeder
+Circuit
+Resistor
+AUX_IN_COMMON
+Equivalent circuit only
+About the The following subsections detail how to connect the most common third-party
+connections in the devices to the Zebra  Iris GTX auxiliary input signals.
+following
+subsections Note that Zebra  Iris GTX auxiliary input signals are optically isolated. Ground
+is only shown in the following subsections for reference, in case you need to
+reference your return path to ground.
+Power, as depicted in the following diagrams, represents a nominal voltage of 24 V
+(+/- 10%). For minimum and maximum voltage requirements, refer to the
+electrical specification of the opto-isolated auxiliary input signals, in the Electrical
+specifications subsection in Appendix B: Technical reference.
+The signal names in this section are shortened to fit within the diagrams: from
+M_AUX_OPTOIND_INn to AUX_IN; and from
+M_AUX_OPTOIND_IN_COMMON to AUX_IN_COMMON.
+
+Tables:
+"AUX_IN
+SensingCircuit
+AUX_IN_COMMON",,,
+,"AUX_IN
+SensingCircuit
+AUX_IN_COMMON",,
+,,,ExternalBleederResistor
+,,,
+,,,
+
+==== Page Separator ====
+
+Page 41
+Connecting to the auxiliary I/O interface 41
+Connecting a sourcing output device to an auxiliary input signal
+Connect a sourcing output device to Zebra  Iris GTX auxiliary input signal, as
+shown below.
++V
+AUX_IN OUT
++
+Sensing
+24V
+Circuit
+-
+AUX_IN_COMMON -V
+Zebra  Iris GTX Sourcing device
+Sinking configuration
+Optional because the auxiliary input signals are optically isolated.
+Equivalent circuit only
+
+Tables:
+"+V
+AUX_IN OUT
++
+Sensing
+24V
+Circuit
+-
+AUX_IN_COMMON -V
+Zebra  Iris GTX Sourcing device
+Sinking configuration
+Optional because the auxiliary input signals are optically isolated.","+V
+OUT
+-V"
+
+==== Page Separator ====
+
+Page 42
+42 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+Connecting a sinking output device to an auxiliary input signal
+Connect a sinking output device to a Zebra  Iris GTX auxiliary input signal, as
+shown below.
+AUX_IN_COMMON +V
++
+Sensing
+24V
+Circuit
+-
+AUX_IN OUT
+Zebra  Iris GTX
+Sourcing configuration
+-V
+Sinking device
+Optional because the auxiliary input signals are optically isolated.
+Equivalent circuit only
+
+Tables:
+==== Page Separator ====
+
+Page 43
+Connecting to the auxiliary I/O interface 43
+Connecting a 3-wire PNP proximity sensor to an auxiliary input signal
+Connect a 3-wire PNP proximity sensor to a Zebra  Iris GTX auxiliary input
+signal, as shown below.
+Brown wire
+Black wire
+AUX_IN
++ Blue wire
+Sensing
+24V
+Circuit
+- 3-wirePNP
+proximity sensor
+AUX_IN_COMMON
+Zebra  Iris GTX
+Sinking configuration
+Optional because the auxiliary input signals are optically isolated.
+Equivalent circuit only
+
+Tables:
+==== Page Separator ====
+
+Page 44
+44 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+Connecting a 3-wire NPN proximity sensor to an auxiliary input signal
+Connect a 3-wire NPN proximity sensor to a Zebra  Iris GTX auxiliary input
+signal, as shown below.
+AUX_IN_COMMON
++
+Sensing
+24V
+Circuit Brown wire
+-
+Black wire
+AUX_IN
+Blue wire
+Zebra  Iris GTX
+Sourcing configuration
+3-wireNPN
+proximity sensor
+Optional because the auxiliary input signals are optically isolated.
+Equivalent circuit only
+
+Tables:
+==== Page Separator ====
+
+Page 45
+Connecting to the auxiliary I/O interface 45
+Connecting a 2-wire proximity sensor to an auxiliary input signal
+You can connect a 2-wire proximity sensor to a Zebra  Iris GTX auxiliary input
+signal in either a sourcing or sinking configuration (that is, on a positive or negative
+power wire). Note that in both cases, you will need to install an external bleeder
+resistor, to ensure that a minimum amount of current flows into the proximity
+sensor in its on-state and in its off-state.
+(cid:129) For the auxiliary input signal to source the current (that is, to connect an auxiliary
+input signal on a positive power wire), connect the 2-wire device to the auxiliary
+input signal as shown below. You must also install an external bleeder resistor
+between the AUX_IN_COMMON pin and brown wire of the proximity sensor.
+Zebra  Iris GTX
+Sourcing configuration
+AUX_IN_COMMON
++
+Sensing 2-wireNPN
+24V
+Circuit proximity sensor
+-
+Brown wire
+AUX_IN
+Blue wire
+Optional because the auxiliary input signals are optically isolated.
+Equivalent circuit only
+The bleeder resistor’s value should guarantee that the minimal required current is
+provided to the connected sensor (the third-party device). For details regarding
+the sensor’s minimum current requirements, refer to its documentation. Note that
+you should use a bleeder resistor with an appropriate power rating for your circuit.
+
+Tables:
+==== Page Separator ====
+
+Page 46
+46 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+(cid:129) For the auxiliary input signal to sink the current, connect the 2-wire device to
+auxiliary input signal as shown below. Install the external bleeder resistor between
+the blue wire of the proximity sensor and the AUX_IN_COMMON pin.
+Brown wire
+Blue wire
+AUX_IN
++
+24V Sensing Bleeding 2-wirePNP
+Circuit Resistor proximity sensor
+-
+AUX_IN_COMMON
+Zebra  Iris GTX
+Sinking configuration
+Optional because the auxiliary input signals are optically isolated.
+Equivalent circuit only
+
+Tables:
+"Brown wire
+Blue wire
+AUX_IN
++
+24V Sensing Bleeding 2-wirePNP
+Circuit Resistor proximity sensor
+-
+AUX_IN_COMMON
+Zebra  Iris GTX
+Sinking configuration
+Optional because the auxiliary input signals are optically isolated.",
+
+==== Page Separator ====
+
+Page 47
+Connecting a light controller and the analog intensity control signal 47
+Connecting a light controller and the analog
+intensity control signal
+Zebra  Iris GTX includes an auxiliary I/O engine, with an analog intensity
+control signal (AUX_AREF_OUT7), which provides a slow changing analog
+intensity (dimming) control signal from 0-10 VDC. This control signal can be
+used to set the intensity for a light controller (for example, with an Advanced
+Illumination inline control system or Smart Vision Lights brick light); however,
+it should not be used to draw any current or drive power.
+To set the intensity of the light controller using Zebra  Design Assistant, chose
+Physical Camera under the Cameras item of the Platform configuration dialog,
+and enter a value for Intensity. See the Grab and auxiliary I/O overview section of
+the Zebra  Iris GTX appendix in the Zebra  Design Assistant help file for more
+information.
+Connect the lighting controller’s intensity pin directly to the analog intensity
+control pin (AUX_AREF_OUT7). The following examples show how to connect
+Zebra  Iris GTX to the trigger and intensity pins of your lighting controller.
+
+Tables:
+==== Page Separator ====
+
+Page 48
+48 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+Connecting a sourcing light controller (NPN pin)
+If your lighting controller has an NPN pin (sourcing input signal), it expects to
+be connected in an NPN topology, whereby the connected, controlling auxiliary
+output signal sinks the current and the input pin sources the current. To do so,
+connect the sourcing light controller to an auxiliary output signal and the analog
+intensity control signal (AUX_AREF_OUT7) of Zebra  Iris GTX as shown
+below1.
+Connection to Zebra  Iris GTX
+Digital IO and power connector
+Connector of the camera Generic light controller
+M12 12 pin (female) Blue wire +24 VDC
+12 Signal Name Pin# Black wire Trigger (NPN/Active Low)
+7 8 AUX_OPTOIND_OUT_COMMON 1 Brown wire GND
+6 AUX_AREF_OUT7 2 Green wire Intensity (optional)
+9
+AUX_OPTOIND_OUT2 3
+5
+11 1 +VDC 4
+4 AUX_OPTOIND_IN3 5
+AUX_OPTOIND_IN_COMMON 6 Connection
+3 2 10 AUX_OPTOIND_IN5 7 to power
+(Standard 24 V)
+The above drawing AUX_OPTOIND_IN6 8
+shows the AUX_OPTOIND_IN4 9 +24 V
+AUX_OPTOIND_OUT0 10
+connector on the
+-VDC 11 0 V
+camera
+AUX_OPTOIND_OUT1 12
+1. When the auxiliary output signal is on, the circuit between
+AUX_OPTOIND_OUT0 and AUX_OPTOIND_OUT_COMMON is closed.
+This allows current to flow from AUX_OPTOIND_OUT0 to
+AUX_OPTOIND_OUT_COMMON, before sinking to ground. When the auxil-
+iary output signal is off, the circuit is open and no current flows.
+
+Tables:
+"Connection to Zebra  Iris GTX
+Digital IO and power connector
+Connector of the camera Generic light contr
+M12 12 pin (female) Blue wire +24 VDC
+12 Signal Name Pin# Black wire Trigger (NPN/Active
+7 8 AUX_OPTOIND_OUT_COMMON 1 Brown wire GND
+6 AUX_AREF_OUT7 2 Green wire Intensity (optional)
+9
+AUX_OPTOIND_OUT2 3
+5
+11 1 +VDC 4
+4 AUX_OPTOIND_IN3 5
+AUX_OPTOIND_IN_COMMON 6 Connection
+3 2 10 AUX_OPTOIND_IN5 7 to power
+(Standard 24 V
+The above drawing AUX_OPTOIND_IN6 8
+shows the AUX_OPTOIND_IN4 9 +24 V
+AUX_OPTOIND_OUT0 10
+connector on the
+-VDC 11 0 V
+camera
+AUX_OPTOIND_OUT1 12",,,,,,oller
+"Connector of the camera
+M12 12 pin (female)
+12 Signal Name Pin#
+7 8 AUX_OPTOIND_OUT_COMMON 1
+6 AUX_AREF_OUT7 2
+9
+AUX_OPTOIND_OUT2 3
+5
+11 1 +VDC 4
+4 AUX_OPTOIND_IN3 5
+AUX_OPTOIND_IN_COMMON 6
+3
+2 10 AUX_OPTOIND_IN5 7
+The above drawing AUX_OPTOIND_IN6 8
+AUX_OPTOIND_IN4 9
+shows the
+AUX_OPTOIND_OUT0 10
+connector on the
+-VDC 11
+camera
+AUX_OPTOIND_OUT1 12",,,,,,
+,,,,,"+24 VDC
+Trigger (NPN/Active
+GNDIntensity
+(optional)",Low)
+,Signal Name,Pin#,,,,
+,AUX_OPTOIND_OUT_COMMON,1,,,,
+,,,,Green wire,,
+,AUX_AREF_OUT7,2,,,,
+,,,,,,
+,AUX_OPTOIND_OUT2,3,,,,)
+,+VDC,4,,,,
+,,,,,,
+,AUX_OPTOIND_IN3,5,,,,
+,AUX_OPTOIND_IN_COMMON,6,,,,
+,AUX_OPTOIND_IN5,7,,,,
+,AUX_OPTOIND_IN6,8,,,,
+,AUX_OPTOIND_IN4,9,,,,
+,AUX_OPTOIND_OUT0,10,,,,
+,,,,,,
+,-VDC,11,,,,
+,,,,,,
+,AUX_OPTOIND_OUT1,12,,,,
+
+==== Page Separator ====
+
+Page 49
+Connecting a light controller and the analog intensity control signal 49
+Connecting a sinking light controller (PNP Pin)
+If your lighting controller has a PNP pin (sinking input signal), it expects to be
+connected in a PNP topology, whereby the connected, controlling auxiliary output
+signal sources the current and the input pin sinks current. To do so, connect the
+sinking light controller to an auxiliary output signal and the analog intensity
+control signal (AUX_AREF_OUT7) of Zebra  Iris GTX as shown below.1
+Note that in this configuration, the other two auxiliary output signals
+(AUX_OPTOIND_OUTn) from Zebra  Iris GTX are not available.
+Connection to Zebra  Iris GTX
+Digital IO and power connector
+Connector of the camera Generic light controller
+M12 12 pin (female) Blue wire +24 VDC
+12 Signal Name Pin# Black wire Trigger (PNP/Active High)
+7 8 AUX_OPTOIND_OUT_COMMON 1 Brown wire GND
+6 AUX_AREF_OUT7 2 Green wire Intensity (optional)
+9
+AUX_OPTOIND_OUT2 3
+5
+11 1 +VDC 4
+4 AUX_OPTOIND_IN3 5
+AUX_OPTOIND_IN_COMMON 6 Connection
+3 to power
+2 10 AUX_OPTOIND_IN5 7
+(Standard 24 V)
+The above drawing AUX_OPTOIND_IN6 8
+AUX_OPTOIND_IN4 9 +24 V
+shows the
+AUX_OPTOIND_OUT0 10
+connector on the
+-VDC 11 0 V
+camera
+AUX_OPTOIND_OUT1 12
+1. When the auxiliary output signal is on, the circuit between
+AUX_OPTOIND_OUT0 and AUX_OPTOIND_OUT_COMMON is closed.
+This allows current to flow from AUX_OPTOIND_OUT0 to
+AUX_OPTOIND_OUT_COMMON, and to the trigger input of the lighting con-
+troller. When the auxiliary output signal is off, the circuit is open and no current flows
+through.
+
+Tables:
+"Connection to Zebra  Iris GTX
+Digital IO and power connector
+Connector of the camera Generic light controller
+M12 12 pin (female) Blue wire +24 VDC
+12 Signal Name Pin# Black wire Trigger (PNP/Active High)
+7 8 AUX_OPTOIND_OUT_COMMON 1 Brown wire GND
+6 AUX_AREF_OUT7 2 Green wire Intensity (optional)
+9
+AUX_OPTOIND_OUT2 3
+5
+11 1 +VDC 4
+4 AUX_OPTOIND_IN3 5
+AUX_OPTOIND_IN_COMMON 6 Connection
+3 to power
+2 10 AUX_OPTOIND_IN5 7
+(Standard 24 V)
+The above drawing AUX_OPTOIND_IN6 8
+AUX_OPTOIND_IN4 9 +24 V
+shows the
+AUX_OPTOIND_OUT0 10
+connector on the
+-VDC 11 0 V
+camera
+AUX_OPTOIND_OUT1 12",,
+"Connector of the camera
+M12 12 pin (female)
+12 Signal Name Pin#
+7 8 AUX_OPTOIND_OUT_COMMON 1
+6 AUX_AREF_OUT7 2
+9
+AUX_OPTOIND_OUT2 3
+5
+11 1 +VDC 4
+4 AUX_OPTOIND_IN3 5
+AUX_OPTOIND_IN_COMMON 6
+3
+2 10 AUX_OPTOIND_IN5 7
+The above drawing AUX_OPTOIND_IN6 8
+AUX_OPTOIND_IN4 9
+shows the
+AUX_OPTOIND_OUT0 10
+connector on the
+-VDC 11
+camera
+AUX_OPTOIND_OUT1 12",,
+,Signal Name,Pin#
+,AUX_OPTOIND_OUT_COMMON,1
+,AUX_AREF_OUT7,2
+,AUX_OPTOIND_OUT2,3
+,+VDC,4
+,AUX_OPTOIND_IN3,5
+,AUX_OPTOIND_IN_COMMON,6
+,AUX_OPTOIND_IN5,7
+,AUX_OPTOIND_IN6,8
+,AUX_OPTOIND_IN4,9
+,AUX_OPTOIND_OUT0,10
+,-VDC,11
+,AUX_OPTOIND_OUT1,12
+
+==== Page Separator ====
+
+Page 50
+50 Chapter 2: Powering and connecting to your Zebra  Iris GTX
+
+Tables:
+==== Page Separator ====
+
+Page 51
+Appendix A:
+Glossary
+Appendix A:
+This appendix defines some of the specialized terms used
+in this manual.
+
+Tables:
+==== Page Separator ====
+
+Page 52
+52 Appendix A: Glossary
+Glossary
+(cid:129) Auxiliary signal.
+An auxiliary signal is a user-defined I/O signal that can have one or more additional
+functions. For example, a signal that can be both a trigger signal and a user-defined
+input signal, is an auxiliary signal.
+• IP67 enclosure.
+An IP67 enclosure is a specific type of industrial enclosure that is dust and
+water-tight. The name is derived using the incarnation protection rating (or
+ingress protection code), and defined in the international standard IEC 60529.
+(cid:129) Sinking.
+A DC circuit that provides the common reference (low) for the circuit. In the case
+of your Zebra  Iris GTX, determining whether the connection is sinking or
+sourcing determines how to connect the auxiliary input common signal and
+auxiliary output common signal, respectively.
+(cid:129) Sourcing.
+A DC circuit that provides the voltage needed for the circuit. In the case of your
+Zebra  Iris GTX, determining whether the connection is sinking or sourcing
+determines how to connect the auxiliary input common signal and auxiliary
+output common signal, respectively.
+(cid:129) Wire-terminal.
+A wire-terminal is designed to receive a stripped wire; the stripped wire can carry
+a signal. Typically, multiple wire-terminals are grouped together into an open-wire
+connector.
+
+Tables:
+==== Page Separator ====
+
+Page 53
+Appendix B:
+Technical reference
+Appendix B:
+This appendix summarizes the hardware elements of
+Zebra  Iris GTX. In addition, this appendix provides pinout
+descriptions for the external connectors of your Zebra 
+Iris GTX.
+
+Tables:
+==== Page Separator ====
+
+Page 54
+54 Appendix B: Technical reference
+Zebra  Iris GTX smart camera summary
+Sensor board
+Specifications GTX2000 GTX2000C GTX5000 GTX5000C GTX8000 GTX8000C
+CMOS Geometry 1/2.2"-type 2/3"-type 1/1.1"-type 1/1.1"-type
+sensor
+Format Monochrome Color Monochrome Color Monochrome Color
+Make and ON Semiconductor - XGS
+model
+Effective resolution (H x V) 1920x1200 2592x2048 4096x2160
+Frame ratea 70.7 fps 17.6 fps 41.7 fps 10.4 fps 39.6 fps 9.9 fps
+Pixel size (H x V) 3.2 μm x 3.2 μm
+Gain range 0 to 21.5 dB
+Exposure speeds 50 μs- 4.2 sec
+External trigger latency N/A N/A N/A
+(Typical value measured
+from OFF to ON)
+External trigger to output N/A N/A N/A
+strobe delay (Typical value
+measured from OFF to ON)
+a. Frame rate is established solely upon rates of acquisition. Your results will differ when including processing time.
+Specifications GTX12000 GTX12000C GTX16000 GTX16000C
+CMOS sensor Geometry 1”-type 1.1"-type
+Format Monochrome Color Monochrome Color
+Make and model ON Semiconductor - XGS
+Effective resolution (H x V) 4096x3072 4000x4000
+Frame ratea 28 fps 7.0 fps 21.6 fps 5.4 fps
+Pixel size (H x V) 3.2 μm x 3.2 μm
+Gain range 0 to 21.5 dB
+Exposure speeds 50 μs- 4.2 sec
+External trigger latency (Typical value N/A N/A
+measured from OFF to ON)
+External trigger to output strobe delay N/A N/A
+(Typical value measured from OFF to ON)
+a. Frame rate is established solely upon rates of acquisition. Your results will differ when including processing time.
+
+Tables:
+Specifications,,GTX2000,GTX2000C,GTX5000,GTX5000C,GTX8000,GTX8000C
+"CMOS
+sensor",Geometry,"1/2.2""-type",,"2/3""-type",,"1/1.1""-type","1/1.1""-type"
+,Format,Monochrome,Color,Monochrome,Color,Monochrome,Color
+,"Make and
+model",ON Semiconductor - XGS,,,,,
+Effective resolution (H x V),,1920x1200,,2592x2048,,4096x2160,
+Frame ratea,,70.7 fps,17.6 fps,41.7 fps,10.4 fps,39.6 fps,9.9 fps
+Pixel size (H x V),,3.2 μm x 3.2 μm,,,,,
+Gain range,,0 to 21.5 dB,,,,,
+Exposure speeds,,50 μs- 4.2 sec,,,,,
+"External trigger latency
+(Typical value measured
+from OFF to ON)",,N/A,,N/A,,N/A,
+"External trigger to output
+strobe delay (Typical value
+measured from OFF to ON)",,N/A,,N/A,,N/A,
+
+Specifications,,GTX12000,GTX12000C,GTX16000,GTX16000C
+CMOS sensor,Geometry,1”-type,,"1.1""-type",
+,Format,Monochrome,Color,Monochrome,Color
+,Make and model,ON Semiconductor - XGS,,,
+Effective resolution (H x V),,4096x3072,,4000x4000,
+Frame ratea,,28 fps,7.0 fps,21.6 fps,5.4 fps
+Pixel size (H x V),,3.2 μm x 3.2 μm,,,
+Gain range,,0 to 21.5 dB,,,
+Exposure speeds,,50 μs- 4.2 sec,,,
+"External trigger latency (Typical value
+measured from OFF to ON)",,N/A,,N/A,
+"External trigger to output strobe delay
+(Typical value measured from OFF to ON)",,N/A,,N/A,
+
+==== Page Separator ====
+
+Page 55
+Zebra  Iris GTX smart camera summary 55
+CPU board
+The CPU board of Zebra  Iris GTX has the following features:
+(cid:129) SOC/CPU: Atom x6211E processor.
+(cid:129) Volatile memory: 4 Gbytes of LPDDR4x SDRAM.
+(cid:129) Non-volatile memory: 32 Gbytes of flash disk (eMMC) memory.
+(cid:129) Networking: One 100/1000 Mbits (or 100 Mbit/1 Gbit) Ethernet networking
+interface. This interface can be used for communicating with external devices
+using the PROFINET, EtherNetI/P, CCLink, or Modbus protocol. For
+PROFINET, Zebra  Iris GTX provides a hardware-assisted PROFINET interface
+that support a minimum I/O cycle time of 1 msec. When using the
+hardware-assisted PROFINET interface, it will create a second Ethernet
+communication device with its own independent MAC address and IP
+settings.The LAN connection associated with the hardware-assisted PROFINET
+interface can be shared with other traffic.
+(cid:129) An advanced I/O engine that includes the following:
+- Digital I/Os: 4 inputs and 3 outputs.
+❯ 4 opto-isolated, digital auxiliary input signals (24V).
+❯ Input signals have interrupt generation capabilities.
+❯ Input signals can sink or source. To source voltage, you must connect an
+auxiliary voltage source to the common input signal
+(AUX_OPTOIND_IN_COMMON). For voltage expectations, see
+Electrical specifications subsection of the Zebra  Iris GTX specifications
+section, later in this appendix. Whether all the input signals are sinking or
+sourcing is dependent upon the connection of the common input signal.
+❯ Input signals are debounced (that is, configured to wait a given amount of
+time between accepting a signal change). The debouncing time can be
+configured using Zebra  Design Assistant. For more information, refer to
+the Zebra  Design Assistant help file.
+
+Tables:
+==== Page Separator ====
+
+Page 56
+56 Appendix B: Technical reference
+❯ 3 opto-isolated auxiliary output signals (up to 24 V). Note that these
+auxiliary output signals are sinking signals that share a common signal. If
+one of these signals is used as a sourcing signal, the other two are no longer
+available.
+- One analog output. A 0-10 V signal designed to connect to the 0-10 V analog
+intensity control pin of a light controller (such as, an Advanced Illumination
+inline control system (ICS3), a Smart Vision Lights Brick light, or a similar
+device). This signal does not provide power; instead, it provides analog intensity
+(dimming) control (0-10 V translates to 0-100% illumination).
+- Timers.1 exposure, 1 strobe, 8 general purpose.
+❯ 1 exposure timer. A 28-bit timer used to control the exposure of your Zebra 
+Iris GTX, and allows a range of exposure time from 50 usec to 4 sec. The
+timer output will always set camera exposure, but can be simultaneously
+redirected to any auxiliary output signal.
+❯ 1 strobe timer. A 28-bit timer whose output can be routed to any auxiliary
+output signal. The resulting output signal can then be used to control a strobe
+device. This timer is limited by the maximum possible value for the exposure
+timer, and when the exposure timer ends, so will the strobe timer.
+❯ 8 general timers. Each of the timers (Timer 1 through 8) is a 32-bit timer
+and can count up to 4,294,967,295 clock ticks before resetting. Each timer
+can use a specified clock source for its active period and a different specified
+clock source for its delay period.
+- One I/O command list. Used to schedule I/O commands, in any order.
+- One rotary decoder. Supports input from rotary encoders with quadrature
+output.
+
+Tables:
+==== Page Separator ====
+
+Page 57
+Lenses 57
+(cid:129) Display. Your Zebra  Iris GTX can use a video screen connected to the VGA/USB
+connector to display the Zebra  Iris GTX interface.The following information
+relates to the device that can be connected to the VGA/USB connector.
+- Output: RGB analog output.
+- Maximum supported resolution: 2048 x 15361.
+- Maximum pixel depth: 32-bits.
+- Maximum vertical refresh frequency: 60 Hz - 85 Hz, depending on
+resolution.
+(cid:129) USB connection. A standard USB keyboard and mouse are supported natively.
+To connect any other device (such as a specialized keyboard or touch screen) to
+your Zebra  Iris GTX, it must have a specialized device driver. If the device has
+a third-party provided driver, inquire whether a specialized device driver is
+available for your Zebra  Iris GTX by contacting your local Zebra  Imaging
+representative.
+Lenses
+Each Zebra  Iris GTX starter kit ships with a C-mount lens. Contact your Zebra 
+sales representative for details.
+Keep the lens free of fingerprints and dust. Do not clean with an alcohol-based
+cleaning solution and do not spray water or cleaning fluids directly onto the lens.
+Instead, use a can of compressed air or a lens cleaning cloth to remove dust.
+1. Be aware that not all monitors can go up to this resolution; please consult your display
+monitor specifications to see what resolutions are supported.
+
+Tables:
+==== Page Separator ====
+
+Page 58
+58 Appendix B: Technical reference
+The Zebra  Iris GTX works with the Varioptic Caspian C-39N0-160-I2C or
+C-39N0-250-I2C lens (liquid lens). This electronically focus-controllable
+C-mount lens, fits within the IP lens case, provided with your Zebra  Iris GTX.
+The Varioptic lens connects to the liquid lens connector inside the lens case
+housing of your Zebra  Iris GTX.
+General care and cleaning
+To clean the unit housing, use a small amount of mild detergent cleaner on a
+cleaning cloth. Do not pour the cleaner directly onto the unit housing.
+To remove dust from the lens cap, use either a can of compressed air or a lens
+cloth. The air must be free of oil, moisture, and other contaminants that could
+remain on the lens cap.
+To clean the glass window of the lens cap, use a small amount of isopropyl alcohol
+on a cleaning cloth. Do not pour the alcohol directly on the glass window.
+Zebra  Iris GTX specifications
+The following specifications detail your Zebra  Iris GTX.
+Electrical specifications
+GTX2000, GTX2000C, GTX5000, GTX5000C, GTX8000, GTX8000C, GTX12000, GTX12000C, GTX16000, GTX16000C
+Operating voltage for the Zebra  Iris GTX under testing conditions 24 V.
+Rated current 600 mA
+Operating voltage tolerance ± 10%
+GTX2000, GTX2000C, GTX5000, GTX5000C, GTX8000, GTX8000C, GTX12000, GTX12000C, GTX16000, GTX16000C
+Varioptic Caspian C-39N0-160-I2C or C-39N0-250-I2C lens (liquid lens)
+Typical Supplied voltage 5 V
+Rated current 50 mA
+
+Tables:
+"GTX2000, GTX2000C, GTX5000, GTX5000C, GTX8000, GTX8000C, GTX12000, GTX12000C, GTX16000, GTX16000C",,
+Operating voltage for the Zebra  Iris GTX under testing conditions,,24 V.
+,Rated current,600 mA
+,Operating voltage tolerance,± 10%
+
+"GTX2000, GTX2000C, GTX5000, GTX5000C, GTX8000, GTX8000C, GTX12000, GTX12000C, GTX16000, GTX16000C",,,
+Varioptic Caspian C-39N0-160-I2C or C-39N0-250-I2C lens (liquid lens),,,
+,Typical,Supplied voltage,5 V
+,,Rated current,50 mA
+
+==== Page Separator ====
+
+Page 59
+Zebra  Iris GTX specifications 59
+GTX2000, GTX2000C, GTX5000, GTX5000C, GTX8000, GTX8000C, GTX12000, GTX12000C, GTX16000, GTX16000C
+I/O specifications
+Opto-isolated output signals Operating voltage 24 V (26 V abs. max)
+Sink current 50 mA max
+Maximum leakage current 1 μΑ@ 24 V
+1 mΑ@ 26 V
+ON voltage 0.4 V @ 2 mA
+1.1 V @ 25 mA
+1.5V @ 50 mA
+PTCa fuse max. time-to-trip 1 sec @ 0.5 A
+OFF to ON response 2 μsec to reach 4 Vb
+ON to OFF response 50 μsec to reach 11 Vb
+Opto-isolated input signals Operating voltage 24 V (26 V abs. max)
+Input current (sink or source)c 3.5 mA maxd, 1 mA mine
+ON voltage level > 11 Vf
+OFF voltage level < 4 V
+OFF to ON response 6 μsec
+ON to OFF response 80 μsec
+0-10 V analog control output signal Non-isolated. Supports lighting devices (such as, an Advanced Illumination inline control
+system (ICS3), a Smart Vision Lights Brick light, or a similar device).
+Note that the 0-10 V is intended for reference voltage only (that is < 1 mA).
+a. The PTC is an automatically resetting fuse.
+b. This occurred under the following condition: output pulled to 24 V using 1 kΩ.
+c. Regardless whether the signal is sinking or sourcing, this measurement is the same.
+d. Maximum input current at maximum ON voltage. Note that the connected device must not limit the current to a value lower than this.
+e. Minimum input current at minimum ON voltage. This can be used to calculate bleeding resistor needed for 2-wire proximity sensor.
+f. Recommended > 12 V when using Zebra  I/O Breakout Box.
+
+Tables:
+"GTX2000, GTX2000C, GTX5000, GTX5000C, GTX8000, GTX8000C, GTX12000, GTX12000C, GTX16000, GTX16000C",,,
+I/O specifications,,,
+,Opto-isolated output signals,Operating voltage,24 V (26 V abs. max)
+,,Sink current,50 mA max
+,,Maximum leakage current,"1 μΑ@ 24 V
+1 mΑ@ 26 V"
+,,ON voltage,"0.4 V @ 2 mA
+1.1 V @ 25 mA
+1.5V @ 50 mA"
+,,PTCa fuse max. time-to-trip,1 sec @ 0.5 A
+,,OFF to ON response,2 μsec to reach 4 Vb
+,,ON to OFF response,50 μsec to reach 11 Vb
+,Opto-isolated input signals,Operating voltage,24 V (26 V abs. max)
+,,Input current (sink or source)c,"3.5 mA maxd, 1 mA mine"
+,,ON voltage level,> 11 Vf
+,,OFF voltage level,< 4 V
+,,OFF to ON response,6 μsec
+,,ON to OFF response,80 μsec
+,0-10 V analog control output signal,"Non-isolated. Supports lighting devices (such as, an Advanced Illumination inline control
+system (ICS3), a Smart Vision Lights Brick light, or a similar device).
+Note that the 0-10 V is intended for reference voltage only (that is < 1 mA).",
+
+==== Page Separator ====
+
+Page 60
+60 Appendix B: Technical reference
+Environmental specifications
+(cid:129) For indoor use only.
+(cid:129) Maximum altitude: 2000 meters.
+(cid:129) Operating temperature: 0 to 45 C (32 °F to 113 °F)1.
+(cid:129) Ventilation requirements: Natural convection.
+(cid:129) Pollution degree: 2 environment.
+(cid:129) Over-voltage category: I
+(cid:129) Ingress protection rating: IP67.
+Mechanical specifications
+GTX2000, GTX2000C, GTX5000, GTX5000C, GTX8000, GTX8000C, GTX12000, GTX12000C, GTX16000,
+GTX1600C
+Connectors M12 8-pin (female) X-coded connector for 100/1000 BaseT Ethernet.
+M12 12-pin (male) connector for VGA/USB.
+M12 12-pin (female) connector for digital I/O and power.
+Certification IP67
+Dimensions
+Dimensions GTX2000, GTX2000C, GTX5000, GTX5000C,
+GTX8000, GTX8000C, GTX12000,
+GTX12000C, GTX16000, GTX16000C
+Weight 407 g (14.35 oz) without IP cap
+504 g (17.77 oz) with IP cap
+Smart camera length (without the connectors) 75 mm (2.95") ± 2 mm (0.079")
+Smart camera height (without the lens) 57 mm (2.24") ± 2 mm (0.079")
+Smart camera width 75 mm (2.95") ± 2 mm (0.079")
+IP cap length (total length) 71 mm (2.79") ± 2 mm (0.079")
+IP cap max lens internal clearance
+Length (interior from the mounting 56.69 mm (2.23") ± 2 mm (0.079")
+flange to inside the clear top)
+Diameter 48 mm (0.71") ± 2 mm (0.079")
+1. Under current testing conditions.
+
+Tables:
+"GTX2000, GTX2000C, GTX5000, GTX5000C, GTX8000, GTX8000C, GTX12000, GTX12000C, GTX16000,
+GTX1600C",
+Connectors,M12 8-pin (female) X-coded connector for 100/1000 BaseT Ethernet.
+,M12 12-pin (male) connector for VGA/USB.
+,M12 12-pin (female) connector for digital I/O and power.
+Certification,IP67
+
+Dimensions,,"GTX2000, GTX2000C, GTX5000, GTX5000C,
+GTX8000, GTX8000C, GTX12000,
+GTX12000C, GTX16000, GTX16000C"
+Weight,,"407 g (14.35 oz) without IP cap
+504 g (17.77 oz) with IP cap"
+Smart camera length (without the connectors),,"75 mm (2.95"") ± 2 mm (0.079"")"
+Smart camera height (without the lens),,"57 mm (2.24"") ± 2 mm (0.079"")"
+Smart camera width,,"75 mm (2.95"") ± 2 mm (0.079"")"
+IP cap length (total length),,"71 mm (2.79"") ± 2 mm (0.079"")"
+IP cap max lens internal clearance,,
+,"Length (interior from the mounting
+flange to inside the clear top)","56.69 mm (2.23"") ± 2 mm (0.079"")"
+,Diameter,"48 mm (0.71"") ± 2 mm (0.079"")"
+
+==== Page Separator ====
+
+Page 61
+Zebra  Iris GTX specifications 61
+Camera housing Camera heat sink [70..02076] [621.4.0002] M4x0.7 - 6H 4.00[0.157]
+O-Ring
+M12 Connectors
+[1.929]49.00
+[3.447] [1.831] [3.583]
+87.55 46.50 91.00
+O-Ring
+[2.795]71.00
+[0.276]7.00
+IPCap [0.945] [0.236]
+24.00 2x 6.00
+[0.791]20.10
+[2.244]57.00
+[1.161]29.50
+[1.732]44.00
+Flange
+Center of [4.724]120.00
+cables Ref
+[0.827]21.00
+[1.654]42.00
+[0.65] [1.476]
+16.50 37.50
+M4x0.7 - 6H 3.50 [0.138]
+Optical axis
+[2.953] [2.402]
+75.00 61.00
+[1.476]37.50
+[0.276] [2.402] [0.276]
+7.00 61.00 7.00
+Dimensions are presented as mm[inches] [2.953]75.00
+
+Tables:
+""
+""
+
+,
+,
+
+,,
+
+,
+,
+"[2.402]61.00
+[2.953]75.00",
+
+==== Page Separator ====
+
+Page 62
+62 Appendix B: Technical reference
+Coin cell battery/Pile bouton
+(cid:129) Used to maintain time and date settings of the unit’s real-time clock.
+Utilisée pour maintenir l'heure et la date de l’unité.
+(cid:129) Battery voltage: 3 V.
+Voltage de la pile: 3 V.
+(cid:129) Diameter (max): 20 mm.
+Diamètre (max): 20 mm.
+(cid:129) Battery type: BR2032.
+Type de pile: BR2032.
+
+Tables:
+==== Page Separator ====
+
+Page 63
+LEDs on your Zebra  Iris GTX 63
+LEDs on your Zebra  Iris GTX
+From the moment you power up your Zebra  Iris GTX to the moment you power
+it down, at least one of the four light-emitting diodes (LEDs) at the back of Zebra 
+Iris GTX should be lit.
+s
+The LEDs on your Zebra  Iris GTX are:
+(cid:129) Power LED and User LED. The colors of these two LEDs change as your Zebra 
+Iris GTX boots.
+(cid:129) Status LED. This LED shows the general activity of your Zebra  Iris GTX.
+(cid:129) 100/1G LED. This LED shows the connection status of your Zebra  Iris GTX.
+
+Tables:
+==== Page Separator ====
+
+Page 64
+64 Appendix B: Technical reference
+The Power and User LEDs typically display one of the following sets of colors:
+LED color Description
+Power User
+Off Off Zebra  Iris GTX has no power.
+Orange Orange/Red blink Thermal trip has been detected.
+Orange Off BIOS execution is in progress.
+Green Orange/Off blink Overheating was detected. Temperature is above the throttle temperature
+limit.
+Green Off Operating System is loading.
+Green Orange Operating system startup is in progress.
+Green Green Camera is ready.
+The Status LED typically displays one of the following sets of colors:
+LED Color Description
+Off There is no power or there is an internal error.
+Red/Orange The image sensor is initializing.
+Red/Orange blink The image sensor is not detected.
+Orange Zebra  Iris GTX is in an idle state. A MIL or Zebra  Design Assistant application could
+also be waiting for a trigger.
+Green Zebra  Iris GTX image acquisition is in progress.
+100/1G LED typically shows the connection status of your Zebra  Iris GTX:
+LED Color Description
+Off There is either no activity or a low speed (10 Mbits) connection between your Zebra 
+Iris GTX and the network.
+Solid yellow There is a link on the 100 Mbits/sec connection.
+Blinking yellow The 100 Mbits/sec connection has activity.
+Solid green There is a link on the 1 Gbit/sec connection.
+Blinking green The 1 Gbit/sec connection has activity.
+
+Tables:
+LED color,,Description
+Power,User,
+Off,Off,Zebra  Iris GTX has no power.
+Orange,Orange/Red blink,Thermal trip has been detected.
+Orange,Off,BIOS execution is in progress.
+Green,Orange/Off blink,"Overheating was detected. Temperature is above the throttle temperature
+limit."
+Green,Off,Operating System is loading.
+Green,Orange,Operating system startup is in progress.
+Green,Green,Camera is ready.
+
+LED Color,Description
+Off,There is no power or there is an internal error.
+Red/Orange,The image sensor is initializing.
+Red/Orange blink,The image sensor is not detected.
+Orange,"Zebra  Iris GTX is in an idle state. A MIL or Zebra  Design Assistant application could
+also be waiting for a trigger."
+Green,Zebra  Iris GTX image acquisition is in progress.
+
+LED Color,Description
+Off,"There is either no activity or a low speed (10 Mbits) connection between your Zebra 
+Iris GTX and the network."
+Solid yellow,There is a link on the 100 Mbits/sec connection.
+Blinking yellow,The 100 Mbits/sec connection has activity.
+Solid green,There is a link on the 1 Gbit/sec connection.
+Blinking green,The 1 Gbit/sec connection has activity.
+
+==== Page Separator ====
+
+Page 65
+Zebra  Iris GTX connectors 65
+Zebra  Iris GTX connectors
+Your Zebra  Iris GTX has several interface connectors. These are the Digital I/O
+and power connector, the VGA/USB connector, the 100/1000 BaseT Ethernet
+connector, and the liquid lens connector.
+Digital I/O and VGA/USB 100/1000
+power connector connector BaseTEthernetconnector
+
+Tables:
+,
+"Digital I/O and VGA/USB 100/1000
+power connector connector BaseTEthernetconnector",
+
+==== Page Separator ====
+
+Page 66
+66 Appendix B: Technical reference
+Digital I/O and power connector
+The digital I/O and power connector is an M12 12-pin (female) connector that
+transmits and receives digital I/O signals, provides an analog intensity (dimming)
+control signal for an inline control system lighting controller, and provides power
+to your Zebra  Iris GTX.
+12
+7
+8
+6
+9
+5
+11 1
+4
+3 2 10
+o
+The pinout for the digital I/O and power connector is as follows:
+Pin Wire color Hardware signal name DA name Description
+for
+auxiliary
+signal
+1 Brown AUX_OPTOIND_OUT_COMMON N/A Opto-isolated industrial auxiliary signal (output) common.
+2 Blue AUX_AREF_OUT7 N/A 0-10 VDC Analog intensity control signal (output). Note that this signal
+uses the - VDC for reference.
+Supported function: a 0-10 VDC analog intensity (dimming) control
+signal that can be received by typical lighting controllers (such as, an
+Advanced Illumination inline control system (ICS3), Smart Vision Lights
+Brick light, or other similar devices). This pin used to be referred to as the
+Analog reference voltage signal.
+3 White AUX_OPTOIND_OUT2 AUX IO2 Opto-isolated industrial auxiliary signal 2 (output).
+Supported function: user-bit 2 (output 3 of 3).
+4 Green + VDC N/A Positive pin of the power provided to your Zebra  Iris GTX. This pin must
+be connected to a + 24 V +/- 10% power supply.
+5 Pink AUX(TRIG)_OPTOIND_IN3 AUX IO3 Opto-isolated industrial auxiliary signal 3 (input).
+6 Yellow AUX_OPTOIND_IN_COMMON N/A Opto-isolated industrial auxiliary signal (input) common.
+Supported function: Whether you should connect this pin to an electrical
+return path or a voltage source depends on whether the third party device
+is sourcing or sinking the current, respectively.
+7 Black AUX_OPTOIND_IN5 AUX IO5 Opto-isolated industrial auxiliary signal 5 (input).
+8 Grey AUX_OPTOIND_IN6 AUX IO6 Opto-isolated industrial auxiliary signal 6 (input).
+
+Tables:
+Pin,Wire color,Hardware signal name,"DA name
+for
+auxiliary
+signal",Description
+1,Brown,AUX_OPTOIND_OUT_COMMON,N/A,Opto-isolated industrial auxiliary signal (output) common.
+2,Blue,AUX_AREF_OUT7,N/A,"0-10 VDC Analog intensity control signal (output). Note that this signal
+uses the - VDC for reference.
+Supported function: a 0-10 VDC analog intensity (dimming) control
+signal that can be received by typical lighting controllers (such as, an
+Advanced Illumination inline control system (ICS3), Smart Vision Lights
+Brick light, or other similar devices). This pin used to be referred to as the
+Analog reference voltage signal."
+3,White,AUX_OPTOIND_OUT2,AUX IO2,"Opto-isolated industrial auxiliary signal 2 (output).
+Supported function: user-bit 2 (output 3 of 3)."
+4,Green,+ VDC,N/A,"Positive pin of the power provided to your Zebra  Iris GTX. This pin must
+be connected to a + 24 V +/- 10% power supply."
+5,Pink,AUX(TRIG)_OPTOIND_IN3,AUX IO3,Opto-isolated industrial auxiliary signal 3 (input).
+6,Yellow,AUX_OPTOIND_IN_COMMON,N/A,"Opto-isolated industrial auxiliary signal (input) common.
+Supported function: Whether you should connect this pin to an electrical
+return path or a voltage source depends on whether the third party device
+is sourcing or sinking the current, respectively."
+7,Black,AUX_OPTOIND_IN5,AUX IO5,Opto-isolated industrial auxiliary signal 5 (input).
+8,Grey,AUX_OPTOIND_IN6,AUX IO6,Opto-isolated industrial auxiliary signal 6 (input).
+
+==== Page Separator ====
+
+Page 67
+Zebra  Iris GTX connectors 67
+Pin Wire color Hardware signal name DA name Description
+for
+auxiliary
+signal
+9 Red AUX_OPTOIND_IN4 AUX IO4 Opto-isolated industrial auxiliary signal 4 (input).
+10 Violet AUX_OPTOIND_OUT0 AUX IO0 Opto-isolated industrial auxiliary signal 0 (output).
+Supported function: user-bit 0 (output 1 of 3).
+11 Gray-Pink - VDC N/A Negative pin of the power provided to your Zebra  Iris GTX. This pin must
+be connected to the electrical return path of the + 24 V +/- 10% power
+supply connected to the +VDC pin.
+12 Red-Blue AUX_OPTOIND_OUT1 AUX IO1 Opto-isolated industrial auxiliary signal 1 (output).
+Supported function: user-bit 1 (output 2 of 3).
+To interface with this connector, you can use either the cable that comes with the
+starter kit, M12-CBL-PWR/3, or you can build your own. To build your own
+digital I/O and power cable, parts can be purchased from:
+Cable information
+Manufacture Phoenix Contact GmbH & Co. KG
+Part number: SAC-12P- MS/3,0-PVC SCO Order No:1554788
+Description: Sensor/actuator cable, 12-pos., black PVC, straight M12 SPEEDCON plug on free conductor end, length: 3.0 m
+
+Tables:
+Pin,Wire color,Hardware signal name,"DA name
+for
+auxiliary
+signal",Description
+9,Red,AUX_OPTOIND_IN4,AUX IO4,Opto-isolated industrial auxiliary signal 4 (input).
+10,Violet,AUX_OPTOIND_OUT0,AUX IO0,"Opto-isolated industrial auxiliary signal 0 (output).
+Supported function: user-bit 0 (output 1 of 3)."
+11,Gray-Pink,- VDC,N/A,"Negative pin of the power provided to your Zebra  Iris GTX. This pin must
+be connected to the electrical return path of the + 24 V +/- 10% power
+supply connected to the +VDC pin."
+12,Red-Blue,AUX_OPTOIND_OUT1,AUX IO1,"Opto-isolated industrial auxiliary signal 1 (output).
+Supported function: user-bit 1 (output 2 of 3)."
+
+,Cable information
+Manufacture,Phoenix Contact GmbH & Co. KG
+Part number:,"SAC-12P- MS/3,0-PVC SCO Order No:1554788"
+Description:,"Sensor/actuator cable, 12-pos., black PVC, straight M12 SPEEDCON plug on free conductor end, length: 3.0 m"
+
+==== Page Separator ====
+
+Page 68
+68 Appendix B: Technical reference
+100/1000 BaseT Ethernet connector
+The 100/1000 BaseT Ethernet connector is an M12 (female) 8-pin X-coded
+connector that provides communication capabilities at 10 Mbit/sec,
+100 Mbit/sec, or 1 Gbit/sec (1000 Mbit/sec). For PROFINET communication,
+this interface provides a hardware-assisted PROFINET interface, which supports
+a minimum cycle time of 1 msec.
+1 2
+8 3
+7 4
+6 5
+o
+The pinout for the Ethernet connector is as follows:
+Pin number Signal name Description
+1 MDI_1+ Bidirectional data A+
+2 MDI_1- Bidirectional data A-
+3 MDI_2+ Bidirectional data B+
+4 MDI_2- Bidirectional data B-
+5 MDI_4+ Bidirectional data D+
+6 MDI_4- Bidirectional data D-
+7 MDI_3- Bidirectional data C-
+8 MDI_3+ Bidirectional data C+
+To interface with this connector, you can use either the cable that comes with the
+starter kit, M12-CBL-ETH/5, or your can purchase a similar cable from an
+alternate source. For an alternate source of 100/1000 BaseT Ethernet cables,
+contact:
+Cable information
+Manufacture Phoenix Contact GmbH & Co. KG
+Part number: NBC-MSX/5.0-94F/R4AC SCO Order No.: 1407473
+Description: Assembled Ethernet cable, CAT6A, 8-position, PUR, RAL 5021 (water
+blue), Plug straight M12 SPEEDCON / IP67, Coding: X, on plug straight
+RJ45 / IP20, length 5 m.
+
+Tables:
+Pin number,Signal name,Description
+1,MDI_1+,Bidirectional data A+
+2,MDI_1-,Bidirectional data A-
+3,MDI_2+,Bidirectional data B+
+4,MDI_2-,Bidirectional data B-
+5,MDI_4+,Bidirectional data D+
+6,MDI_4-,Bidirectional data D-
+7,MDI_3-,Bidirectional data C-
+8,MDI_3+,Bidirectional data C+
+
+,Cable information
+Manufacture,Phoenix Contact GmbH & Co. KG
+Part number:,NBC-MSX/5.0-94F/R4AC SCO Order No.: 1407473
+Description:,"Assembled Ethernet cable, CAT6A, 8-position, PUR, RAL 5021 (water
+blue), Plug straight M12 SPEEDCON / IP67, Coding: X, on plug straight
+RJ45 / IP20, length 5 m."
+
+==== Page Separator ====
+
+Page 69
+Zebra  Iris GTX connectors 69
+VGA/USB connector
+The VGA/USB connector is an M12 12-pin (male) connector that transmits
+output video and can both transmit and receive USB signals. The output video
+signal is a standard RGB analog video output used to send the operating system’s
+desktop to the connected display device.
+7
+8
+6
+12
+9
+5
+1
+4
+10 2 3 11
+The table below summarizes the supported standard display resolutions:
+Standard display resolution Analog video Maximum refresh rate
+1920 × 1200 RGB 60 Hz
+1920 × 1080 RGB 60 Hz
+1600 × 1200 RGB 60 Hz
+1280 × 1024 RGB 85 Hz
+1024 × 768 RGB 85 Hz
+800 × 600 RGB 85 Hz
+640 × 480 RGB 85 Hz
+The pinout for the VGA/USB connector is as follows:
+Pin number Signal name Description
+1 USB PWR 5 V supplied from your Zebra  Iris GTX to the USB peripherals.
+2 USB_DATA_P USB data +.
+3 USB_DATA_N USB data -.
+10 USB_REF USB reference.
+5 RED_VID_OUT R component of the RGB video output signal.
+6 BLUE_VID_OUT B component of the RGB video output signal.
+7 VSYNC Vertical sync of the RGB video output signal.
+8 HSYNC Horizontal sync of the RGB video output signal.
+9 GREEN_VID_OUT G component of the RGB video output signal.
+4, 11, 12 VGA _REF VGA reference.
+
+Tables:
+Standard display resolution,Analog video,Maximum refresh rate
+1920 × 1200,RGB,60 Hz
+1920 × 1080,RGB,60 Hz
+1600 × 1200,RGB,60 Hz
+1280 × 1024,RGB,85 Hz
+1024 × 768,RGB,85 Hz
+800 × 600,RGB,85 Hz
+640 × 480,RGB,85 Hz
+
+Pin number,Signal name,Description
+1,USB PWR,5 V supplied from your Zebra  Iris GTX to the USB peripherals.
+2,USB_DATA_P,USB data +.
+3,USB_DATA_N,USB data -.
+10,USB_REF,USB reference.
+5,RED_VID_OUT,R component of the RGB video output signal.
+6,BLUE_VID_OUT,B component of the RGB video output signal.
+7,VSYNC,Vertical sync of the RGB video output signal.
+8,HSYNC,Horizontal sync of the RGB video output signal.
+9,GREEN_VID_OUT,G component of the RGB video output signal.
+"4, 11, 12",VGA _REF,VGA reference.
+
+==== Page Separator ====
+
+Page 70
+70 Appendix B: Technical reference
+The following is a wire-diagram of the Zebra  GTR-CBL-VGAUSB cable,
+showing the connection between the Zebra  Iris GTX VGA/USB connector on
+one end and the HD-15 and USB connectors on the other.
+RED
+5 1
+GND 4 6 GND
+GREEN
+9 2
+E
+GND 12 7 GND L
+BLUE MAE
+6 3
+M12 GND 11 8 GND F
+VVGGAARReeffeerreennccee HD-15
+PHOENIX 15
+0
+HS
+8 13
+VS
+7 14
+CONTACT DRAIN WIRE
+SHELL SHELL
+2 USB DATA 3 E
+3 USB DATA# 2 AL
+1 USB VCC 1 EM
+10 USB Reference 4 B F
+DRAIN WIRE S
+SHELL SHELL U
+This cable can be purchased as part of the starter kit, or separately from Zebra 
+(GTR-CBL-VGAUSB).
+
+Tables:
+"RED
+5 1
+GND 4 6 GND
+GREEN
+9 2
+E
+GND 12 7 GND L
+BLUE MAE
+6 3
+GND 11 8 GND F M12
+VVGGAARReeffeerreennccee HD-15
+15 PHOENIX
+0
+HS
+8 13
+VS
+7 14
+DRAIN WIRE CONTACT
+SHELL SHELL
+2 USB DATA 3 E
+3 USB DATA# 2 AL
+1 USB VCC 1 EM
+10 USB Reference 4 B F
+DRAIN WIRE S
+SHELL SHELL U",,"1
+6 GND
+2
+E
+7 GND LA
+3 ME
+8 GND F
+5
+5 D-1
+10 H
+1314
+SHELL"
+"5
+GND 4
+9
+GND 12
+6
+M12
+GND 11
+PHOENIX
+87
+CONTACT
+SHELL
+23110
+SHELL",,
+,,"3 EL
+2 AM
+1 EF
+4 B
+S
+SHELL U"
+,USB Reference,
+,DRAIN WIRE,
+
+GREEN,
+BLUE,
+VGAReferenceVGAReferenceHS,
+,
+
+==== Page Separator ====
+
+Page 71
+Zebra  Iris GTX connectors 71
+Liquid lens connector
+The liquid lens connector is a six-pin shrouded male connector designed to
+connect to the 6-pin connector from a Varioptic Caspian C-39N0-160-I2C or
+C-39N0-250-I2C lens. The secondary, 3-pin male connector, from the Varioptic
+lens is not used.
+This connector is located inside the lens cap housing of your Zebra  Iris GTX.
+The pinout for the liquid lens connector is as follows:
+Pin number Signal name Description
+1 PWR Power supply (+5 V).
+2 GND Ground.
+3 SDA Serial data line signal.
+4 SCL Serial data clock signal.
+5 Unused Unused.
+6 Unused Unused.
+
+Tables:
+Pin number,Signal name,Description
+1,PWR,Power supply (+5 V).
+2,GND,Ground.
+3,SDA,Serial data line signal.
+4,SCL,Serial data clock signal.
+5,Unused,Unused.
+6,Unused,Unused.
+
+==== Page Separator ====
+
+Page 72
+72 Appendix B: Technical reference
+
+Tables:
+==== Page Separator ====
+
+Page 73
+Appendix C:
+Zebra  Imaging
+Appendix C:
+operating system
+utilities and
+recovery
+This appendix describes the utilities found on your Zebra 
+Iris GTX and provides instructions on how to recover the
+Zebra  Imaging operating system (MIOS) that comes with
+Zebra  Iris GTX.
+
+Tables:
+==== Page Separator ====
+
+Page 74
+74 Appendix C: Zebra  Imaging operating system utilities and recovery
+Zebra  Imaging operating system utilities
+Zebra  Iris GTX includes several useful utilities. They are available from the
+following web address:
+http:\\GTXxxxxxx:8080
+In the above example, replace xxxxxx with the six digits of your smart camera’s
+MAC address. If you have changed the camera’s device name, replace GTXxxxxxx
+with the name of your smart camera, or use its IP address; for more information,
+see Connecting to your Zebra  Iris GTX desktop section, in Chapter 2: Powering and
+connecting to your Zebra  Iris GTX.
+Note that these utilities are stored on your Zebra  Iris GTX, but should be
+installed on your development computer, in case the operating system partition
+becomes corrupt and you need to use these programs. They can be downloaded
+from your Zebra  Iris GTX’s web address, shown at the top of this section.
+The utilities offered are as follows:
+(cid:129) Virtual network computing (VNC). This utility allow you to remotely connect
+to your Zebra  Iris GTX.
+(cid:129) Zebra  System Discovery (MtxSysDiscovery) utility. This 64-bit Windows
+utility allows you to discover Zebra  Iris GTX cameras on your network. In
+addition, it can change network settings, restart or shut down individual smart
+cameras, or open the portal page of a specific camera. On computers with Zebra 
+Design Assistant installed, this utility is included in the Tools folder, accessible
+from the MIL Control Center.
+(cid:129) Bonjour browser. This is a link to the Internet that leads to the Bonjour browser
+website. Bonjour browser is a program that lists all the services on your subnet.
+This provides a way to find the IP address of any Zebra  Iris GTX on the subnet.
+
+Tables:
+==== Page Separator ====
+
+Page 75
+Upgrading the Zebra  Imaging operating system 75
+(cid:129) FileZilla. A client utility for transferring files from one computer to another using
+FTP, FTPS, or SFTP.
+(cid:129) Putty. A client console utility for running remote sessions on a computer over a
+network using the SSH (Secure Shell), Telnet, or Rlogin network protocols.
+(cid:129) Rufus. A utility that formats and creates bootable USB keys.
+Upgrading the Zebra  Imaging operating
+system
+If you have upgraded Zebra  Design Assistant, you might be required to update
+the version of the Zebra  Imaging operating system (MIOS) on Zebra  Iris GTX.
+You can configure the MILConfig utility on your development computer to
+receive updates. You can then use this update to upgrade the camera.
+Warning An upgrade will erase all information on the Zebra  Iris GTX storage drive. If
+you have made changes to a deployed project from its operator view, it is
+recommended that in Zebra  Design Assistant, you synchronize recipes between
+the runtime and the design time project. Also, import all recipes that you created
+at runtime, copy all image folders that are stored on Zebra  Iris GTX, and back
+up any validation sets that you need to continue using after the upgrade.
+To upgrade the Zebra  Imaging operating system (MIOS) on your Zebra 
+Iris GTX, perform the following:
+1. Connect remotely to your Zebra  Iris GTX from Zebra  Design Assistant.
+Zebra  Design Assistant will detect a version mismatch and prompt you to
+upgrade. When you accept this prompt, an Update dialog will appear.
+2. In the Update dialog, browse to the location on your development computer
+where MILConfig stored the new MIOS ISO file (.iso). This is generally in the
+same location as where your Zebra  Design Assistant upgrade package is stored.
+3. Once the MIOS ISO file has been selected, click on the Update button in the
+Update dialog and your update will begin.
+The ISO file will be copied to Zebra  Iris GTX; then, the camera will power cycle.
+Upon power cycling, the camera is upgraded.
+
+Tables:
+==== Page Separator ====
+
+Page 76
+76 Appendix C: Zebra  Imaging operating system utilities and recovery
+To apply an MIOS upgrade on several smart cameras, it might be more efficient
+to upgrade from a USB key, connected to the smart camera’s VGA/USB connector,
+through a GTR-CBL-VGAUSB cable. To do so, you will need to install the MIOS
+upgrade on one smart camera, back it up on a USB key, and then deploy it on the
+other smart cameras. See the Making a backup MIOS and deploying it on multiple
+units section, later in this appendix.
+Restoring the Zebra  Imaging operating
+system to factory defaults
+If required, you can restore the Zebra  Imaging operating system to the factory
+default using the MIOS ISO stored in the recovery partition on your Zebra 
+Iris GTX, or you can restore it from a USB key with a factory default MIOS ISO.
+Restoring the factory default MIOS
+The factory default version of the MIOS ISO is stored on the Zebra  Iris GTX
+recovery partition. To recover the factory default version, perform the following:
+1. Connect a monitor, mouse, and keyboard to your Zebra  Iris GTX, as described
+in Chapter 2: Powering and connecting to your Zebra  Iris GTX.
+2. Reboot your Zebra  Iris GTX.
+
+Tables:
+==== Page Separator ====
+
+Page 77
+Restoring the Zebra  Imaging operating system to factory defaults 77
+3. Near the end of the BIOS boot process, after the BIOS logo appears, a
+monochrome screen presents two options: load the current OS or load the recovery
+ISO from the Recovery MIOS partition. Use your keyboard to select the latter.
+
+Tables:
+==== Page Separator ====
+
+Page 78
+78 Appendix C: Zebra  Imaging operating system utilities and recovery
+4. After selecting to load the MIOS from the recovery partition, a disk check will be
+performed. Once the check is complete, the Zebra  Imaging OS - Recovery page
+is presented.
+
+Tables:
+==== Page Separator ====
+
+Page 79
+Restoring the Zebra  Imaging operating system to factory defaults 79
+5. Select Install to System Disk to install the factory default MIOS. You will be
+warned that the installation will replace the contents of your disk and asked if you
+want to continue. Select Yes. An installation screen will be presented and the
+installation process will begin.
+Warning! This will replace the contents of your Zebra  Iris GTX’s storage drive.
+6. After installation, the unit will reboot. Select OK when prompted to reboot, and
+Zebra  Iris GTX will reboot loaded with the factory default MIOS.
+
+Tables:
+==== Page Separator ====
+
+Page 80
+80 Appendix C: Zebra  Imaging operating system utilities and recovery
+Burning and restoring a factory default MIOS with a USB key
+Only a factory default MIOS can be burned to a bootable USB key. If you are
+trying to restore a backup, see the Making a backup MIOS and deploying it on
+multiple units section later in the appendix. To acquire an ISO of the factory default
+MIOS, contact your Zebra  representative, or refer to the Zebra  Design
+Assistant documentation for the location of the system restore MIOS file in the
+Zebra  Design Assistant installation folder.
+Burning a factory default MIOS ISO to a USB key
+To safely copy your factory default MIOS ISO and use it to install a new operating
+system on multiple Zebra  Iris GTX units, you should burn the factory default
+MIOS ISO to a blank USB key with a capacity of 4 Gbytes, or more. To do so:
+1. Acquire a copy of the factory default MIOS ISO and store it locally on your
+Microsoft Windows development computer.
+2. Connect a blank USB key to your Microsoft Windows development computer.
+3. Launch Rufus (the Reliable USB formatting utility). To locate a copy of the Rufus
+utility, refer to the Zebra  Imaging operating system utilities section, earlier in this
+appendix.
+
+Tables:
+==== Page Separator ====
+
+Page 81
+Restoring the Zebra  Imaging operating system to factory defaults 81
+4. Click on Select to navigate to the location of the MIOS file to burn to the USB
+key, and select the USB key to use from the Device drop-down menu.
+5. Set Partition scheme to MBR, and set Target system to BIOS or UEFI.
+6. Specify a FAT32 partition, leave Cluster size to the default, and leave Volume
+label as is.
+7. Click on the Start button to begin burning to the USB.
+8. A pop-up will appear asking you to download a new version of Syslinux. Click on
+Yes.
+
+Tables:
+==== Page Separator ====
+
+Page 82
+82 Appendix C: Zebra  Imaging operating system utilities and recovery
+9. Another pop-up will appear asking you in which mode to write your ISO image.
+Select Write in DD Image mode.
+10. Once this process is complete, double-click on the Safely Remove icon in your
+Windows System Tray, before removing the drive.
+
+Tables:
+==== Page Separator ====
+
+Page 83
+Restoring the Zebra  Imaging operating system to factory defaults 83
+Restoring the factory default MIOS using a USB key
+Once your USB key has a burned image of the factory default MIOS, you can use
+it to install the factory default MIOS onto multiple Zebra  Iris GTX smart
+cameras. To do this, you need to connect your bootable USB key, a monitor,
+mouse, and keyboard to your Zebra  Iris GTX, as described in Chapter 2:
+Powering and connecting to your Zebra  Iris GTX.
+1. With your bootable USB key connected to your Zebra  Iris GTX, reboot your
+Zebra  Iris GTX.
+2. When the BIOS logo appears, press the ESC key to open the front page of the
+BIOS menu.
+3. Click on Boot Manager. The BIOS boot device menu is presented.
+
+Tables:
+==== Page Separator ====
+
+Page 84
+84 Appendix C: Zebra  Imaging operating system utilities and recovery
+4. From the BIOS boot device menu, select the EFI USB Device option from the
+EFI Boot Devices list. Zebra  Iris GTX will then boot from the USB key.
+5. After selecting to boot from the USB key, the Zebra  Imaging OS - Recovery
+page is presented.
+
+Tables:
+==== Page Separator ====
+
+Page 85
+Restoring the Zebra  Imaging operating system to factory defaults 85
+6. Select Install to System Disk to install the MIOS found on your USB key. You
+will be warned that the installation will replace the contents of your disk and asked
+if you want to continue. Select Yes. An installation screen will be presented and
+the installation process will begin.
+Warning! This will replace the contents of your Zebra  Iris GTX’s storage drive.
+7. After installation, a prompt warns that the system will shut down and that you
+will need to remove the external boot device before booting up again. Click on
+OK when prompted and remove the external boot device from its port.
+
+Tables:
+==== Page Separator ====
+
+Page 86
+86 Appendix C: Zebra  Imaging operating system utilities and recovery
+Making a backup MIOS and deploying it on
+multiple units
+If you have updated settings or made specific changes to your MIOS that you
+would like to use on other units, you will need to make a backup MIOS ISO.
+This backup is stored in the recovery partition of Zebra  Iris GTX. This MIOS
+ISO cannot be mounted onto a USB key; it can only be stored on one.
+Alternatively, you can store this backup on your network. Once a backup is saved,
+it can be deployed on a unit by following the instructions outlined in the
+subsections below.
+Saving a backup MIOS
+To create a backup MIOS ISO that you can use in the event that your drive ever
+corrupts, you should store it on a blank USB key with a capacity of 4 Gbytes, or
+more. To do so:
+1. Follow steps 1-4 of the Restoring the factory default MIOS section earlier in this
+appendix.
+2. On the Zebra  Imaging OS - Recovery page, select Backup System Disk.
+A terminal will open and start the process of creating a backup MIOS ISO. The
+ISO file will be stored in the boot/backup/rescue folder of your
+Zebra  Iris GTX unit.
+
+Tables:
+==== Page Separator ====
+
+Page 87
+Making a backup MIOS and deploying it on multiple units 87
+3. When the process completes, you will get a message that the backup completed
+successfully. Click on OK, and manually reboot your unit.
+4. You can now store this backup MIOS ISO on a USB key or somewhere on your
+network.
+Deploying a backup MIOS to the same unit on which it was created
+Once you have made a backup MIOS ISO, you can now deploy this backup if
+you need to restore the unit. To deploy the backup MIOS ISO, perform the
+following:
+1. Reboot your Zebra  Iris GTX.
+2. Near the end of the BIOS boot process, after the BIOS logo appears, a
+monochrome screen presents you with three options, instead of two: load the
+current MIOS, load the recovery ISO, or load the backup ISO. Use your keyboard
+to select the latter.
+
+Tables:
+==== Page Separator ====
+
+Page 88
+88 Appendix C: Zebra  Imaging operating system utilities and recovery
+3. After selecting to load the backup ISO, your unit will restart. Do not change the
+selection on the monochrome screen; eventually, the unit will present the login
+screen, ask for the default password, and then present the Zebra  Imaging OS -
+Backup page. To complete the deployment of the backup on the system disk, select
+the Install to system disk option.
+Deploying a backup MIOS to a different unit
+With a backup MIOS ISO saved either on a USB key or somewhere on your
+network, you can deploy the backup MIOS ISO to multiple units that require the
+same settings as the backup MIOS ISO. To deploy the backup MIOS ISO to
+multiple units, perform the following:
+1. Locate the backup MIOS ISO and copy it to a known location on the Zebra 
+Iris GTX unit that you will be restoring.
+2. Open the Linux command terminal and use setrescue.sh backup to install the
+backup MIOS ISO onto the recovery partition.
+3. Reboot the Zebra  Iris GTX unit.
+
+Tables:
+==== Page Separator ====
+
+Page 89
+Making a backup MIOS and deploying it on multiple units 89
+4. Near the end of the BIOS boot process, after the BIOS logo appears, a
+monochrome screen presents three options: load the current MIOS, load the
+Recovery ISO, or load the backup ISO. Use your keyboard to select the latter.
+
+Tables:
+==== Page Separator ====
+
+Page 90
+90 Appendix C: Zebra  Imaging operating system utilities and recovery
+5. After selecting to boot from the backup MISO ISO, the Zebra  Imaging OS -
+Backup page is presented. Select Install to System Disk.
+After installation completes, the unit will reboot and the backed up version of the
+MIOS will be deployed.
+
+Tables:
+==== Page Separator ====
+
+Page 91
+Updating the Zebra  Iris GTX BIOS 91
+Updating the Zebra  Iris GTX BIOS
+After upgrading the operating system, you should verify that you have the most
+up-to-date BIOS version before beginning.
+Important If you do not have the correct BIOS version, it will cause a problem with your
+Zebra  Iris GTX. The BIOS version is displayed on the Essential Information
+page of the Zebra  Design Assistant configuration portal; on this page, you can
+also see if there are new BIOS versions available.
+Updating the BIOS is a delicate operation that requires user-intervention to ensure
+it is executed without interruption. Note that if a power failure occurs during the
+BIOS update process, your Zebra  Iris GTX will have to be sent to Zebra  for
+repair.
+To update the BIOS, perform the following:
+1. Access the Zebra  Iris GTX desktop. To do so, you can either:
+(cid:129) Connect directly using a local display and mouse-keyboard connection. To
+connect a local display, mouse, and keyboard, see the Powering and connecting
+to your Zebra  Iris GTX section, in Chapter 2: Powering and connecting to your
+Zebra  Iris GTX.
+(cid:129) Connect remotely via a VNC client, Putty, or through Microsoft Windows
+telnet. To find a VCN client or Putty, follow the instructions in the Zebra 
+Imaging operating system utilities section, earlier in this appendix.
+2. If you are connecting with a VNC client, once the Zebra  Iris GTX desktop is
+displayed, open a terminal window by clicking on the Activities menu command
+and then the Terminal icon. When using Putty, you are presented immediately
+with the terminal window.
+Note that you must have Auto logon enabled in the Zebra  Design Assistant portal
+in order to connect to a VNC client. This is found on the AUTO LOGON tab
+of the DEVICE portal page. See the Zebra  Design Assistant documentation for
+more information.
+
+Tables:
+==== Page Separator ====
+
+Page 92
+92 Appendix C: Zebra  Imaging operating system utilities and recovery
+3. Inside the terminal window, go to the /opt/BIOS folder using the following
+commands:
+cd /opt
+cd BIOS
+ Note that MIOS is case-sensitive.
+4. Start the BIOS update application using the following command:
+sudo ./IRISGTX_<BIOSVERSION>.bin
+where you should replace <BIOSVERSION> with the new BIOS version (for
+example, IrisGTX_100002.bin). The BIOS update starts after a 10-second delay.
+Once the BIOS update begins, information will appear on your local display.
+5. When the BIOS update completes, you will be prompted to reboot Zebra 
+Iris GTX. Changes made will not take effect until you reboot.
+
+Tables:
+==== Page Separator ====
+
+Page 93
+Appendix D:
+Listing of Zebra 
+Appendix D:
+Iris GTX smart
+cameras
+This appendix lists the key feature changes to the Zebra 
+Iris GTX smart cameras.
+
+Tables:
+==== Page Separator ====
+
+Page 94
+94 Appendix D: Listing of Zebra  Iris GTX smart cameras
+Key feature changes
+Part number Version Description
+GTX2000C, GTX5000C, 000 First shipping version of Zebra  Iris GTX color models running the Zebra  Imaging
+GTX8000C, GTX12000C, operating system (64-bit) with Zebra  Design Assistant IDE.
+GTX16000C
+GTX2000, GTX5000, GTX8000, 000 First shipping version of Zebra  Iris GTX monochrome models running the Zebra  Imaging
+GTX12000, GTX16000 operating system (64-bit) with Zebra  Design Assistant IDE.
+
+Tables:
+Part number,Version,Description
+"GTX2000C, GTX5000C,
+GTX8000C, GTX12000C,
+GTX16000C",000,"First shipping version of Zebra  Iris GTX color models running the Zebra  Imaging
+operating system (64-bit) with Zebra  Design Assistant IDE."
+"GTX2000, GTX5000, GTX8000,
+GTX12000, GTX16000",000,"First shipping version of Zebra  Iris GTX monochrome models running the Zebra  Imaging
+operating system (64-bit) with Zebra  Design Assistant IDE."
+
+==== Page Separator ====
+
+Page 95
+Index LLED100/1G
+62
+Power 62–63
+! Status 62
+User 62–63
+100/1000 BaseT 11–12, 18, 21, 55, 60, 64, 67
+Lens, physical 11
+Configuring 24 Liquid lens 13, 22–23, 64, 70
+LED 62
+M
+C
+Zebra  I/O Breakout Box 12, 19
+Cable100/1000
+BaseT 11–12, 55
+N
+Digital I/O and power 11
+Connecting 19–21 Network path 27
+100/1000 BaseT 21–67 NPN-type transistor See Sinking device
+auxiliary input signals 38–46
+auxiliary output signals 29–37 P
+Liquid lens 13, 22–23, 64, 70
+Password 26
+Remotely 26
+VGA/USB 11, 18–21, 60, 64, 68 PATH function 27
+PNP See Sourcing device
+Connector100/1000
+BaseT 18, 60, 64, 67 Power 66
+Digital I/O and power 18, 60, 64–65 Power cable 11–12, 19
+LED 62–63
+Processor 8
+D
+Project 13
+Digital I/O and power 11, 18, 60, 64–65 Proximity sensor 43–45
+E S
+eMMC See Flash disk Sensor chip type 9
+Ethernet see 100/1000 BaseT Sinking device 28–29, 38, 46
+input 35–36
+F output 42
+Sourcing device 28, 30, 38, 45
+Flash disk 8, 55
+input 34
+Frame rate 9
+output 41
+Fuse 33
+support 16
+I
+T
+ICS3 See Liquid Lens
+Timers 56
+inductive load input 37
+U
+K
+User name 26
+Key feature changes 82
+Utilities 26
+
+Tables:
+==== Page Separator ====
+
+Page 96
+VVGA/USBcable
+12
+connector 11, 18–19, 21, 60, 64, 68
+VNC 26
+VNC See Connecting remotely
+Wwebsite,
+support 16
+
+Tables:
+==== Page Separator ====
+
+Page 97
+Regulatory Compliance
+FCC Compliance Statement
+Warning
+Changes or modifications to these units not expressly approved by the party responsible for the compliance could
+void the user's authority to operate this equipment.
+The use of shielded cables for connections of these devices to other peripherals is required to meet the regulatory
+requirements.
+Note
+These devices comply with Part 15 of FCC Rules. Operation is subject to the following two conditions:
+1. These devices may not cause harmful interference, and
+2. These devices must accept any interference received, including interference that may
+cause undesired operation.
+This equipment has been tested and found to comply with the limits for Class A digital
+devices, pursuant to Part 15 of the FCC Rules. These limits are designed to provide
+reasonable protection against harmful interference when the equipment is operated in a
+commercial environment. This equipment generates, uses, and can radiate radio
+frequency energy and, if not installed and used in accordance with the instruction manual, may cause harmful
+interference to radio communications. Operation of these devices in a residential area is
+likely to cause harmful interference in which case the user will be required to correct the
+interference at his/her own expense.
+Innovation, Science and Economic Development Canada
+Compliance Statement
+These digital apparatuses do not exceed the Class A limits for radio noise emission from digital apparatuses set
+out in the Radio Interference Regulations of Innovation, Science and Economic Development Canada (ISED).
+Ces appareils numériques n’émettent pas de bruits radioélectriques dépassant les limites applicables aux appareils
+numériques de Classe A prescrites dans le Règlement sur le brouillage radioélectrique édicté par Innovation,
+Sciences et Développement Économique Canada (ISDE).
+EU Notice (European Union)
+WARNING: These are class A products. In a domestic environment these products may cause radio interference
+in which case the user may be required to take adequate measures.
+
+Tables:
+==== Page Separator ====
+
+Page 98
+AVERTISSEMENT: Ces appareils sont des produits informatiques de Classe A. Lorsque ces appareils sont utilisés
+dans un environnement résidentiel, ces produits peuvent entraîner des interférences radioélectriques. Dans ce
+cas, l'usager peut être prié de prendre des mesures correctives appropriées.
+This device complies with Directive 2014/30/EU for Class A digital devices. They have been tested and found
+to comply with EN55011/CISPR11 and EN61326-1/IEC61326-1.
+Ces unités sont conformes à la Directive 2014/30/EU pour les unités numériques de Classe A. Les tests effectués
+ont prouvé qu’elles sont conformes aux normes EN55011/CISPR11 et EN61326-1/IEC61326-1.
+Directive on Waste Electrical and Electronic Equipment
+(WEEE)
+Europe
+(English) European user’s information – Directive on Waste Electrical
+and Electronic Equipment (WEEE)
+Please refer to the Zebra  Web site (www.Zebra .com/environment/weee) for recycling
+information.
+(Français) Informations aux utilisateurs Européens – Règlementation
+des déchets d’équipements électriques et électroniques (DEEE)
+Se référer au site Web de Zebra  (www.Zebra .com/environment/weee) pour l’information concernant le
+recyclage.
+(Deutsch) Information für europäische Anwender – Europäische Regelungen zu Elektro- und
+Elektronikaltgeräten (WEEE)
+Bitte wenden Sie sich an dem Zebra -Website (www.Zebra .com/environment/weee) für Recycling
+Informationen.
+(Italiano) Informazioni per gli utenti europei – Direttiva sui rifiuti di apparecchiature elettriche
+ed elettroniche (RAEE)
+Si prega di riferirsi al sito Web Zebra  (www.Zebra .com/environment/weee) per le informazioni di riciclaggio.
+Caution: Coin cell bettery replacement
+Risk of explosion if battery is replaced with an incorrect type. Dispose of used batteries according to local
+instructions and regulations
+Attention: Remplacement de la pile bouton
+Il y a risque d’explosion si la pile est remplacée par un type incorrect. Disposer des pile usagées conformément
+aux instructions et aux réglementations de votre région.
+
+Tables:
+==== Page Separator ====
+
+Page 99
+Limited Warranty
+Refer to the warranty statement that came with your product.
+
+Tables:
+==== Page Separator ====
+
+Page 100
+
+
+Tables:
+==== Page Separator ====
+
